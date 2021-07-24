@@ -1,0 +1,24 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "BeforeAwardListenerLibrary",
+  "sourceName": "contracts/prize-strategy/BeforeAwardListenerLibrary.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ERC165_INTERFACE_ID_BEFORE_AWARD_LISTENER",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60b4610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80638a741914146038575b600080fd5b603e6073565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b634cdf9c3e60e01b8156fea2646970667358221220bae4d3ee03d1b397dcbf3792c7a23703743f682f4c875c60da371b66a7d6532c64736f6c634300060c0033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80638a741914146038575b600080fd5b603e6073565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b634cdf9c3e60e01b8156fea2646970667358221220bae4d3ee03d1b397dcbf3792c7a23703743f682f4c875c60da371b66a7d6532c64736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

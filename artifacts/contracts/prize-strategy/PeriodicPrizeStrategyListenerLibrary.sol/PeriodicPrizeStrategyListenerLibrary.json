@@ -1,0 +1,24 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "PeriodicPrizeStrategyListenerLibrary",
+  "sourceName": "contracts/prize-strategy/PeriodicPrizeStrategyListenerLibrary.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ERC165_INTERFACE_ID_PERIODIC_PRIZE_STRATEGY_LISTENER",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60b4610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80631511e54f146038575b600080fd5b603e6073565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b63575072c660e01b8156fea26469706673582212204b7f451212d986bde35ead5d906b0d675c7e4fd5d43584825fc151ba624786aa64736f6c634300060c0033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c80631511e54f146038575b600080fd5b603e6073565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b63575072c660e01b8156fea26469706673582212204b7f451212d986bde35ead5d906b0d675c7e4fd5d43584825fc151ba624786aa64736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
