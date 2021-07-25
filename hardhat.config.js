@@ -10,6 +10,26 @@ task("accounts", "Prints the list of accounts", async () => {
   }
 });
 
+const networks = {
+  coverage: {
+    url: 'http://127.0.0.1:8555',
+    blockGasLimit: 200000000,
+    allowUnlimitedContractSize: true
+  },
+  localhost: {
+    chainId: 1,
+    url: 'http://127.0.0.1:8545',
+    allowUnlimitedContractSize: true,
+    timeout: 1000 * 60
+  },
+  harmonyTestnet: {
+    url: 'https://api.s0.b.hmny.io',
+    chainId: 1666700000,
+    
+  }
+}
+
+
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 

@@ -9,7 +9,6 @@ import "@openzeppelin/contracts-upgradeable/introspection/ERC165CheckerUpgradeab
 import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
-import "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol";
 import "@pooltogether/fixed-point/contracts/FixedPoint.sol";
 
 import "../token/TokenListener.sol";
@@ -42,8 +41,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
     uint256 indexed prizePeriodStartedAt
   );
 
-  event RngRequestFailed();
-
   event PrizePoolAwardStarted(
     address indexed operator,
     address indexed prizePool,
@@ -61,10 +58,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   event PrizePoolAwarded(
     address indexed operator,
     uint256 randomNumber
-  );
-
-  event RngServiceUpdated(
-    RNGInterface indexed rngService
   );
 
   event TokenListenerUpdated(
@@ -110,7 +103,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
     PrizePool indexed prizePool,
     TicketInterface ticket,
     IERC20Upgradeable sponsorship,
-    RNGInterface rng,
     IERC20Upgradeable[] externalErc20Awards
   );
 
@@ -130,7 +122,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   PrizePool public prizePool;
   TicketInterface public ticket;
   IERC20Upgradeable public sponsorship;
-  RNGInterface public rng;
 
   // Current RNG Request
   RngRequest internal rngRequest;
@@ -163,23 +154,19 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   /// @param _prizePool The prize pool to award
   /// @param _ticket The ticket to use to draw winners
   /// @param _sponsorship The sponsorship token
-  /// @param _rng The RNG service to use
   function initialize (
     uint256 _prizePeriodStart,
     uint256 _prizePeriodSeconds,
     PrizePool _prizePool,
     TicketInterface _ticket,
     IERC20Upgradeable _sponsorship,
-    RNGInterface _rng,
     IERC20Upgradeable[] memory externalErc20Awards
   ) public initializer {
     require(address(_prizePool) != address(0), "PeriodicPrizeStrategy/prize-pool-not-zero");
     require(address(_ticket) != address(0), "PeriodicPrizeStrategy/ticket-not-zero");
     require(address(_sponsorship) != address(0), "PeriodicPrizeStrategy/sponsorship-not-zero");
-    require(address(_rng) != address(0), "PeriodicPrizeStrategy/rng-not-zero");
     prizePool = _prizePool;
     ticket = _ticket;
-    rng = _rng;
     sponsorship = _sponsorship;
     _setPrizePeriodSeconds(_prizePeriodSeconds);
 
@@ -196,16 +183,12 @@ abstract contract PeriodicPrizeStrategy is Initializable,
 
     externalErc721s.initialize();
 
-    // 30 min timeout
-    _setRngRequestTimeout(1800);
-
     emit Initialized(
       _prizePeriodStart,
       _prizePeriodSeconds,
       _prizePool,
       _ticket,
       _sponsorship,
-      _rng,
       externalErc20Awards
     );
     emit PrizePoolOpened(_msgSender(), prizePeriodStartedAt);
@@ -386,35 +369,21 @@ abstract contract PeriodicPrizeStrategy is Initializable,
     return block.number;
   }
 
-  /// @notice Starts the award process by starting random number request.  The prize period must have ended.
-  /// @dev The RNG-Request-Fee is expected to be held within this contract before calling this function
-  function startAward() external requireCanStartAward {
-    (address feeToken, uint256 requestFee) = rng.getRequestFee();
-    if (feeToken != address(0) && requestFee > 0) {
-      IERC20Upgradeable(feeToken).safeApprove(address(rng), requestFee);
+  /// @notice generates random number
+  function vrf() public view returns (bytes32 result) {
+  	bytes32 input;
+  	assembly {
+  		let memPtr := mload(0x40)
+        if iszero(staticcall(not(0), 0xff, input, 32, memPtr, 32)) {
+          invalid()
+        }
+        result := mload(memPtr)
     }
-
-    (uint32 requestId, uint32 lockBlock) = rng.requestRandomNumber();
-    rngRequest.id = requestId;
-    rngRequest.lockBlock = lockBlock;
-    rngRequest.requestedAt = _currentTime().toUint32();
-
-    emit PrizePoolAwardStarted(_msgSender(), address(prizePool), requestId, lockBlock);
-  }
-
-  /// @notice Can be called by anyone to unlock the tickets if the RNG has timed out.
-  function cancelAward() public {
-    require(isRngTimedOut(), "PeriodicPrizeStrategy/rng-not-timedout");
-    uint32 requestId = rngRequest.id;
-    uint32 lockBlock = rngRequest.lockBlock;
-    delete rngRequest;
-    emit RngRequestFailed();
-    emit PrizePoolAwardCancelled(msg.sender, address(prizePool), requestId, lockBlock);
   }
 
   /// @notice Completes the award process and awards the winners.  The random number must have been requested and is now available.
-  function completeAward() external requireCanCompleteAward {
-    uint256 randomNumber = rng.randomNumber(rngRequest.id);
+  function completeAward() external {
+    uint256 randomNumber = uint256(vrf());
     delete rngRequest;
 
     if (address(beforeAwardListener) != address(0)) {
@@ -474,60 +443,7 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   /// @notice Returns whether an award process can be started
   /// @return True if an award can be started, false otherwise.
   function canStartAward() external view returns (bool) {
-    return _isPrizePeriodOver() && !isRngRequested();
-  }
-
-  /// @notice Returns whether an award process can be completed
-  /// @return True if an award can be completed, false otherwise.
-  function canCompleteAward() external view returns (bool) {
-    return isRngRequested() && isRngCompleted();
-  }
-
-  /// @notice Returns whether a random number has been requested
-  /// @return True if a random number has been requested, false otherwise.
-  function isRngRequested() public view returns (bool) {
-    return rngRequest.id != 0;
-  }
-
-  /// @notice Returns whether the random number request has completed.
-  /// @return True if a random number request has completed, false otherwise.
-  function isRngCompleted() public view returns (bool) {
-    return rng.isRequestComplete(rngRequest.id);
-  }
-
-  /// @notice Returns the block number that the current RNG request has been locked to
-  /// @return The block number that the RNG request is locked to
-  function getLastRngLockBlock() external view returns (uint32) {
-    return rngRequest.lockBlock;
-  }
-
-  /// @notice Returns the current RNG Request ID
-  /// @return The current Request ID
-  function getLastRngRequestId() external view returns (uint32) {
-    return rngRequest.id;
-  }
-
-  /// @notice Sets the RNG service that the Prize Strategy is connected to
-  /// @param rngService The address of the new RNG service interface
-  function setRngService(RNGInterface rngService) external onlyOwner requireAwardNotInProgress {
-    require(!isRngRequested(), "PeriodicPrizeStrategy/rng-in-flight");
-
-    rng = rngService;
-    emit RngServiceUpdated(rngService);
-  }
-
-  /// @notice Allows the owner to set the RNG request timeout in seconds.  This is the time that must elapsed before the RNG request can be cancelled and the pool unlocked.
-  /// @param _rngRequestTimeout The RNG request timeout in seconds.
-  function setRngRequestTimeout(uint32 _rngRequestTimeout) external onlyOwner requireAwardNotInProgress {
-    _setRngRequestTimeout(_rngRequestTimeout);
-  }
-
-  /// @notice Sets the RNG request timeout in seconds.  This is the time that must elapsed before the RNG request can be cancelled and the pool unlocked.
-  /// @param _rngRequestTimeout The RNG request timeout in seconds.
-  function _setRngRequestTimeout(uint32 _rngRequestTimeout) internal {
-    require(_rngRequestTimeout > 60, "PeriodicPrizeStrategy/rng-timeout-gt-60-secs");
-    rngRequestTimeout = _rngRequestTimeout;
-    emit RngRequestTimeoutSet(rngRequestTimeout);
+    return _isPrizePeriodOver();
   }
 
   /// @notice Allows the owner to set the prize period in seconds.
@@ -681,13 +597,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
 
   modifier requireCanStartAward() {
     require(_isPrizePeriodOver(), "PeriodicPrizeStrategy/prize-period-not-over");
-    require(!isRngRequested(), "PeriodicPrizeStrategy/rng-already-requested");
-    _;
-  }
-
-  modifier requireCanCompleteAward() {
-    require(isRngRequested(), "PeriodicPrizeStrategy/rng-not-requested");
-    require(isRngCompleted(), "PeriodicPrizeStrategy/rng-not-complete");
     _;
   }
 

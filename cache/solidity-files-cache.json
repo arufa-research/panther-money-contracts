@@ -792,8 +792,8 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/builders/MultipleWinnersBuilder.sol": {
-      "lastModificationDate": 1627090535084,
-      "contentHash": "659c06372bd86867f0c2654ca06c383e",
+      "lastModificationDate": 1627201630861,
+      "contentHash": "d29b0c753cc366a13f0e587a369e74e6",
       "sourceName": "contracts/builders/MultipleWinnersBuilder.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -866,8 +866,8 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/prize-strategy/multiple-winners/MultipleWinners.sol": {
-      "lastModificationDate": 1627090535088,
-      "contentHash": "439fa87e1402fffea39d961670e8ba7c",
+      "lastModificationDate": 1627201611001,
+      "contentHash": "27c8ae94b76871f59d7d306c82b52173",
       "sourceName": "contracts/prize-strategy/multiple-winners/MultipleWinners.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -940,8 +940,8 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/prize-strategy/PeriodicPrizeStrategy.sol": {
-      "lastModificationDate": 1627090535088,
-      "contentHash": "495024d358c40004cd3297486965c0ed",
+      "lastModificationDate": 1627201525805,
+      "contentHash": "555f6edc7c6524425bb648e8dab62516",
       "sourceName": "contracts/prize-strategy/PeriodicPrizeStrategy.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -973,7 +973,6 @@
         "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
         "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol",
         "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
-        "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol",
         "@pooltogether/fixed-point/contracts/FixedPoint.sol",
         "../token/TokenListener.sol",
         "../token/TokenControllerInterface.sol",
@@ -1133,40 +1132,6 @@
       ],
       "artifacts": [
         "SafeERC20Upgradeable"
-      ]
-    },
-    "/home/ay/harmony/OnePool/node_modules/@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol": {
-      "lastModificationDate": 1627039871011,
-      "contentHash": "edb3bf0b9fc9a51eba25f7976d9c5b99",
-      "sourceName": "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.6.0"
-      ],
-      "artifacts": [
-        "RNGInterface"
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@pooltogether/fixed-point/contracts/FixedPoint.sol": {
@@ -2362,6 +2327,1248 @@
       ],
       "artifacts": [
         "UInt256Array"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/token-faucet/TokenFaucetProxyFactory.sol": {
+      "lastModificationDate": 1627092186100,
+      "contentHash": "4ff670d34671ae7b0d52af7ee93b27f9",
+      "sourceName": "contracts/token-faucet/TokenFaucetProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TokenFaucet.sol",
+        "../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TokenFaucetProxyFactory"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/token-faucet/TokenFaucet.sol": {
+      "lastModificationDate": 1627092186100,
+      "contentHash": "d832688b6437c57ccf675ad5a5f44dbc",
+      "sourceName": "contracts/token-faucet/TokenFaucet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "@pooltogether/fixed-point/contracts/FixedPoint.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "../utils/ExtendedSafeCast.sol",
+        "../token/TokenListener.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TokenFaucet"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/TokenFaucetHarness.sol": {
+      "lastModificationDate": 1627092128999,
+      "contentHash": "345af477c3bda1d75976d34af2433d7f",
+      "sourceName": "contracts/test/TokenFaucetHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token-faucet/TokenFaucet.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TokenFaucetHarness"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/ERC1820ImplementerMock.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "ed76e26db3324933c8f31ad600ce73b0",
+      "sourceName": "contracts/test/ERC1820ImplementerMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/introspection/IERC1820ImplementerUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC777/IERC777RecipientUpgradeable.sol",
+        "../Constants.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC1820ImplementerMock"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/introspection/IERC1820ImplementerUpgradeable.sol": {
+      "lastModificationDate": 1627039871007,
+      "contentHash": "b31e95ffec4624c3e19ac2a4b9236771",
+      "sourceName": "@openzeppelin/contracts-upgradeable/introspection/IERC1820ImplementerUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820ImplementerUpgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC777/IERC777RecipientUpgradeable.sol": {
+      "lastModificationDate": 1627039871907,
+      "contentHash": "d362f3bbee45354fcd6393dafb03ef18",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC777/IERC777RecipientUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC777RecipientUpgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/PeriodicPrizeStrategyListenerStub.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "7e08523515b33b7d8b3ba4f3bca5a68f",
+      "sourceName": "contracts/test/PeriodicPrizeStrategyListenerStub.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/PeriodicPrizeStrategyListener.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyListenerStub"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/PeriodicPrizeStrategyHarness.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "34fcda5c4a882a4ac2b6328a68921ba2",
+      "sourceName": "contracts/test/PeriodicPrizeStrategyHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/PeriodicPrizeStrategy.sol",
+        "./PeriodicPrizeStrategyDistributorInterface.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyHarness"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/PeriodicPrizeStrategyDistributorInterface.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "71241bae57a8f5d251844b402f9a0843",
+      "sourceName": "contracts/test/PeriodicPrizeStrategyDistributorInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/PeriodicPrizeStrategy.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyDistributorInterface"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/BeforeAwardListenerStub.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "30562d1ba8faff8baafa052dc42b59c8",
+      "sourceName": "contracts/test/BeforeAwardListenerStub.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/BeforeAwardListener.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BeforeAwardListenerStub"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/introspection/ERC165Upgradeable.sol": {
+      "lastModificationDate": 1627039871007,
+      "contentHash": "2fe109cd8f5cb2cc237b5e6a7e99edd7",
+      "sourceName": "@openzeppelin/contracts-upgradeable/introspection/ERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165Upgradeable.sol",
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Upgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol": {
+      "lastModificationDate": 1627039871907,
+      "contentHash": "257300f2edf6321055d08d824bfc7440",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/ContextUpgradeable.sol",
+        "./IERC721Upgradeable.sol",
+        "./IERC721MetadataUpgradeable.sol",
+        "./IERC721EnumerableUpgradeable.sol",
+        "./IERC721ReceiverUpgradeable.sol",
+        "../../introspection/ERC165Upgradeable.sol",
+        "../../math/SafeMathUpgradeable.sol",
+        "../../utils/AddressUpgradeable.sol",
+        "../../utils/EnumerableSetUpgradeable.sol",
+        "../../utils/EnumerableMapUpgradeable.sol",
+        "../../utils/StringsUpgradeable.sol",
+        "../../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Upgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721MetadataUpgradeable.sol": {
+      "lastModificationDate": 1627039871907,
+      "contentHash": "2d7026b65054974c694449d3f243bb39",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721MetadataUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721MetadataUpgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721EnumerableUpgradeable.sol": {
+      "lastModificationDate": 1627039871907,
+      "contentHash": "91be9105f64b0e3ef04ca0672e5249d5",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721EnumerableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721EnumerableUpgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol": {
+      "lastModificationDate": 1627039871007,
+      "contentHash": "b927cbeb303f88e9f6b38fdc71a5d381",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSetUpgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/EnumerableMapUpgradeable.sol": {
+      "lastModificationDate": 1627039871007,
+      "contentHash": "4ff02b74113158b1360f1eb85a7be7f3",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/EnumerableMapUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMapUpgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
+      "lastModificationDate": 1627039871007,
+      "contentHash": "f00ef76e89770e6a3e3f0e4da0844794",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "StringsUpgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/NFT.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "cef7c1dceefb8aaeec836bd3cd175e70",
+      "sourceName": "contracts/test/NFT.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NFT"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/YieldSourcePrizePoolHarness.sol": {
+      "lastModificationDate": 1627092128999,
+      "contentHash": "9fed7121deedeff0e3596c9d37412a5c",
+      "sourceName": "contracts/test/YieldSourcePrizePoolHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-pool/yield-source/YieldSourcePrizePool.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldSourcePrizePoolHarness"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/YieldSourcePrizePoolHarnessProxyFactory.sol": {
+      "lastModificationDate": 1627092128999,
+      "contentHash": "7eb1d398b23422222f489142feb49a61",
+      "sourceName": "contracts/test/YieldSourcePrizePoolHarnessProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./YieldSourcePrizePoolHarness.sol",
+        "../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldSourcePrizePoolHarnessProxyFactory"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/PrizePoolHarness.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "ab469e75877d271944860418bbddecb2",
+      "sourceName": "contracts/test/PrizePoolHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-pool/PrizePool.sol",
+        "./YieldSourceStub.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PrizePoolHarness"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/YieldSourceStub.sol": {
+      "lastModificationDate": 1627092128999,
+      "contentHash": "76978eab0be4e5d84b5735cf8c590270",
+      "sourceName": "contracts/test/YieldSourceStub.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldSourceStub"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/PrizeSplitHarness.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "e67ae6e1b2653b5f2e163d46aac617e2",
+      "sourceName": "contracts/test/PrizeSplitHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+        "../token/ControlledToken.sol",
+        "../prize-strategy/PrizeSplit.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "PrizeSplitHarness"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/ERC20Mintable.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "bb030081db51e30f42997aa57d5f83fd",
+      "sourceName": "contracts/test/ERC20Mintable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC20Mintable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/EchidnaTokenFaucet.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "0c603afc30ac5d58d6f4746ef4f3fb49",
+      "sourceName": "contracts/test/EchidnaTokenFaucet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token-faucet/TokenFaucet.sol",
+        "./ERC20Mintable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EchidnaTokenFaucet"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/CTokenMock.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "60dc2663558b2e656ae57364720ec34c",
+      "sourceName": "contracts/test/CTokenMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+        "@pooltogether/fixed-point/contracts/FixedPoint.sol",
+        "hardhat/console.sol",
+        "./ERC20Mintable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "CTokenMock"
+      ]
+    },
+    "/home/ay/harmony/OnePool/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1627039870343,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/MultipleWinnersHarness.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "8b83a58915398986288fb7f4628102a7",
+      "sourceName": "contracts/test/MultipleWinnersHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/multiple-winners/MultipleWinners.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MultipleWinnersHarness"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/MultipleWinnersHarnessProxyFactory.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "5c78a4c9f1fea81602fd1a33d8c570f3",
+      "sourceName": "contracts/test/MultipleWinnersHarnessProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./MultipleWinnersHarness.sol",
+        "../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MultipleWinnersHarnessProxyFactory"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/MappedSinglyLinkedListExposed.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "0512d61cd38789e7e2156507bd53ad16",
+      "sourceName": "contracts/test/MappedSinglyLinkedListExposed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/MappedSinglyLinkedList.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MappedSinglyLinkedListExposed"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/ERC721Mintable.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "14ff688e8192200ab7b97e463d014341",
+      "sourceName": "contracts/test/ERC721Mintable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC721Mintable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/ExtendedSafeCastExposed.sol": {
+      "lastModificationDate": 1627092128995,
+      "contentHash": "ae7dbe34cb9cc9d73c59c20163070c35",
+      "sourceName": "contracts/test/ExtendedSafeCastExposed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ExtendedSafeCast.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ExtendedSafeCastExposed"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/Timestamp.sol": {
+      "lastModificationDate": 1627092128999,
+      "contentHash": "1194f5301c15aad9fe9de236b3b8fe10",
+      "sourceName": "contracts/test/Timestamp.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Timestamp"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/test/UInt256ArrayExposed.sol": {
+      "lastModificationDate": 1627092128999,
+      "contentHash": "28d5d2883815d47bff3479f7c4f2f1be",
+      "sourceName": "contracts/test/UInt256ArrayExposed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/UInt256Array.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UInt256ArrayExposed"
       ]
     }
   }

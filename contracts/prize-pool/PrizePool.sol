@@ -138,7 +138,6 @@ abstract contract PrizePool is PrizePoolInterface, OwnableUpgradeable, Reentranc
   /// @dev Emitted when there was an error thrown awarding an External ERC721
   event ErrorAwardingExternalERC721(bytes error);
 
-
   struct CreditPlan {
     uint128 creditLimitMantissa;
     uint128 creditRateMantissa;

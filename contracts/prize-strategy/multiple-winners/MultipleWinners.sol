@@ -77,7 +77,6 @@ contract MultipleWinners is PeriodicPrizeStrategy, PrizeSplit {
     PrizePool _prizePool,
     TicketInterface _ticket,
     IERC20Upgradeable _sponsorship,
-    RNGInterface _rng,
     uint256 _numberOfWinners
   ) public initializer {
     IERC20Upgradeable[] memory _externalErc20Awards;
@@ -88,7 +87,6 @@ contract MultipleWinners is PeriodicPrizeStrategy, PrizeSplit {
       _prizePool,
       _ticket,
       _sponsorship,
-      _rng,
       _externalErc20Awards
     );
 

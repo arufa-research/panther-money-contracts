@@ -12,7 +12,6 @@ contract MultipleWinnersBuilder {
   event MultipleWinnersCreated(address indexed prizeStrategy);
 
   struct MultipleWinnersConfig {
-    RNGInterface rngService;
     uint256 prizePeriodStart;
     uint256 prizePeriodSeconds;
     string ticketName;
@@ -67,7 +66,6 @@ contract MultipleWinnersBuilder {
       prizePool,
       ticket,
       sponsorship,
-      prizeStrategyConfig.rngService,
       prizeStrategyConfig.numberOfWinners
     );
 

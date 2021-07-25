@@ -109,12 +109,6 @@
         },
         {
           "indexed": false,
-          "internalType": "contract RNGInterface",
-          "name": "rng",
-          "type": "address"
-        },
-        {
-          "indexed": false,
           "internalType": "contract IERC20Upgradeable[]",
           "name": "externalErc20Awards",
           "type": "address[]"
@@ -270,12 +264,6 @@
     },
     {
       "anonymous": false,
-      "inputs": [],
-      "name": "RngRequestFailed",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
       "inputs": [
         {
           "indexed": false,
@@ -285,19 +273,6 @@
         }
       ],
       "name": "RngRequestTimeoutSet",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "internalType": "contract RNGInterface",
-          "name": "rngService",
-          "type": "address"
-        }
-      ],
-      "name": "RngServiceUpdated",
       "type": "event"
     },
     {
@@ -460,19 +435,6 @@
     },
     {
       "inputs": [],
-      "name": "canCompleteAward",
-      "outputs": [
-        {
-          "internalType": "bool",
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
       "name": "canStartAward",
       "outputs": [
         {
@@ -482,13 +444,6 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "cancelAward",
-      "outputs": [],
-      "stateMutability": "nonpayable",
       "type": "function"
     },
     {
@@ -576,32 +531,6 @@
       "type": "function"
     },
     {
-      "inputs": [],
-      "name": "getLastRngLockBlock",
-      "outputs": [
-        {
-          "internalType": "uint32",
-          "name": "",
-          "type": "uint32"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "getLastRngRequestId",
-      "outputs": [
-        {
-          "internalType": "uint32",
-          "name": "",
-          "type": "uint32"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
       "inputs": [
         {
           "internalType": "uint256",
@@ -629,11 +558,6 @@
           "type": "address"
         },
         {
-          "internalType": "contract RNGInterface",
-          "name": "_rng",
-          "type": "address"
-        },
-        {
           "internalType": "contract IERC20Upgradeable[]",
           "name": "externalErc20Awards",
           "type": "address[]"
@@ -647,32 +571,6 @@
     {
       "inputs": [],
       "name": "isPrizePeriodOver",
-      "outputs": [
-        {
-          "internalType": "bool",
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "isRngCompleted",
-      "outputs": [
-        {
-          "internalType": "bool",
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "isRngRequested",
       "outputs": [
         {
           "internalType": "bool",
@@ -832,19 +730,6 @@
     },
     {
       "inputs": [],
-      "name": "rng",
-      "outputs": [
-        {
-          "internalType": "contract RNGInterface",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
       "name": "rngRequestTimeout",
       "outputs": [
         {
@@ -898,32 +783,6 @@
     {
       "inputs": [
         {
-          "internalType": "uint32",
-          "name": "_rngRequestTimeout",
-          "type": "uint32"
-        }
-      ],
-      "name": "setRngRequestTimeout",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "contract RNGInterface",
-          "name": "rngService",
-          "type": "address"
-        }
-      ],
-      "name": "setRngService",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
           "internalType": "contract TokenListenerInterface",
           "name": "_tokenListener",
           "type": "address"
@@ -945,13 +804,6 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "startAward",
-      "outputs": [],
-      "stateMutability": "nonpayable",
       "type": "function"
     },
     {
@@ -1010,6 +862,19 @@
       "name": "transferOwnership",
       "outputs": [],
       "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vrf",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "result",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
       "type": "function"
     }
   ],
