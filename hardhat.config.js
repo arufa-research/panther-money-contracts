@@ -38,5 +38,6 @@ const networks = {
  */
 module.exports = {
   solidity: "0.6.12",
+  networks
 };
 

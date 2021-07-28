@@ -1209,8 +1209,8 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/prize-pool/PrizePool.sol": {
-      "lastModificationDate": 1627039519552,
-      "contentHash": "c438199647396e9bc95d1389416c6f71",
+      "lastModificationDate": 1627482583503,
+      "contentHash": "baeb8c10396a4d96e1da6525b7c249d9",
       "sourceName": "contracts/prize-pool/PrizePool.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -1243,7 +1243,6 @@
         "@openzeppelin/contracts-upgradeable/introspection/ERC165CheckerUpgradeable.sol",
         "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol",
         "@pooltogether/fixed-point/contracts/FixedPoint.sol",
-        "../external/compound/ICompLike.sol",
         "../registry/RegistryInterface.sol",
         "../reserve/ReserveInterface.sol",
         "../token/TokenListenerInterface.sol",
@@ -1682,42 +1681,6 @@
         "IERC721ReceiverUpgradeable"
       ]
     },
-    "/home/ay/harmony/OnePool/contracts/external/compound/ICompLike.sol": {
-      "lastModificationDate": 1627090535084,
-      "contentHash": "67af1c0816d9744a63ba8c447c1afb6f",
-      "sourceName": "contracts/external/compound/ICompLike.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol"
-      ],
-      "versionPragmas": [
-        "0.6.12"
-      ],
-      "artifacts": [
-        "ICompLike"
-      ]
-    },
     "/home/ay/harmony/OnePool/contracts/registry/RegistryInterface.sol": {
       "lastModificationDate": 1627090535088,
       "contentHash": "9db9031a69f3866b915b0a88f3ddde50",
@@ -2078,257 +2041,6 @@
         "YieldSourcePrizePool"
       ]
     },
-    "/home/ay/harmony/OnePool/contracts/prize-strategy/PeriodicPrizeStrategyListener.sol": {
-      "lastModificationDate": 1627090535088,
-      "contentHash": "081d59630a83f27e46cfb42c1d8e1983",
-      "sourceName": "contracts/prize-strategy/PeriodicPrizeStrategyListener.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./PeriodicPrizeStrategyListenerInterface.sol",
-        "./PeriodicPrizeStrategyListenerLibrary.sol",
-        "../Constants.sol"
-      ],
-      "versionPragmas": [
-        "0.6.12"
-      ],
-      "artifacts": [
-        "PeriodicPrizeStrategyListener"
-      ]
-    },
-    "/home/ay/harmony/OnePool/contracts/reserve/Reserve.sol": {
-      "lastModificationDate": 1627090535088,
-      "contentHash": "b36199404b454c8fe91c9e6e847cebfb",
-      "sourceName": "contracts/reserve/Reserve.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
-        "./ReserveInterface.sol",
-        "../prize-pool/PrizePoolInterface.sol"
-      ],
-      "versionPragmas": [
-        ">=0.5.0 <0.7.0"
-      ],
-      "artifacts": [
-        "Reserve"
-      ]
-    },
-    "/home/ay/harmony/OnePool/contracts/external/compound/CTokenInterface.sol": {
-      "lastModificationDate": 1627090535084,
-      "contentHash": "59ee3028705bfb1bf71177ac6b8a5428",
-      "sourceName": "contracts/external/compound/CTokenInterface.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol"
-      ],
-      "versionPragmas": [
-        "0.6.12"
-      ],
-      "artifacts": [
-        "CTokenInterface"
-      ]
-    },
-    "/home/ay/harmony/OnePool/contracts/registry/Registry.sol": {
-      "lastModificationDate": 1627090535088,
-      "contentHash": "15dcc7d65e6aaaeb17380e97a961bda0",
-      "sourceName": "contracts/registry/Registry.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
-        "./RegistryInterface.sol"
-      ],
-      "versionPragmas": [
-        ">=0.5.0 <0.7.0"
-      ],
-      "artifacts": [
-        "Registry"
-      ]
-    },
-    "/home/ay/harmony/OnePool/contracts/external/openzeppelin/OpenZeppelinProxyFactoryInterface.sol": {
-      "lastModificationDate": 1627090535084,
-      "contentHash": "7e9b2dec49a7cd0822a3ec3924d5fbcf",
-      "sourceName": "contracts/external/openzeppelin/OpenZeppelinProxyFactoryInterface.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "0.6.12"
-      ],
-      "artifacts": [
-        "OpenZeppelinProxyFactoryInterface"
-      ]
-    },
-    "/home/ay/harmony/OnePool/contracts/utils/ExtendedSafeCast.sol": {
-      "lastModificationDate": 1627039519556,
-      "contentHash": "d31ccf01dff59fb9e65cabc08df899a1",
-      "sourceName": "contracts/utils/ExtendedSafeCast.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "0.6.12"
-      ],
-      "artifacts": [
-        "ExtendedSafeCast"
-      ]
-    },
-    "/home/ay/harmony/OnePool/contracts/utils/UInt256Array.sol": {
-      "lastModificationDate": 1627039519556,
-      "contentHash": "606006e5fa9fbd9231af18fe04fbaaee",
-      "sourceName": "contracts/utils/UInt256Array.sol",
-      "solcConfig": {
-        "version": "0.6.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "0.6.12"
-      ],
-      "artifacts": [
-        "UInt256Array"
-      ]
-    },
     "/home/ay/harmony/OnePool/contracts/token-faucet/TokenFaucetProxyFactory.sol": {
       "lastModificationDate": 1627092186100,
       "contentHash": "4ff670d34671ae7b0d52af7ee93b27f9",
@@ -2407,6 +2119,40 @@
       ],
       "artifacts": [
         "TokenFaucet"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/utils/ExtendedSafeCast.sol": {
+      "lastModificationDate": 1627039519556,
+      "contentHash": "d31ccf01dff59fb9e65cabc08df899a1",
+      "sourceName": "contracts/utils/ExtendedSafeCast.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ExtendedSafeCast"
       ]
     },
     "/home/ay/harmony/OnePool/contracts/test/TokenFaucetHarness.sol": {
@@ -2549,6 +2295,44 @@
       ],
       "artifacts": [
         "IERC777RecipientUpgradeable"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/prize-strategy/PeriodicPrizeStrategyListener.sol": {
+      "lastModificationDate": 1627090535088,
+      "contentHash": "081d59630a83f27e46cfb42c1d8e1983",
+      "sourceName": "contracts/prize-strategy/PeriodicPrizeStrategyListener.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PeriodicPrizeStrategyListenerInterface.sol",
+        "./PeriodicPrizeStrategyListenerLibrary.sol",
+        "../Constants.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyListener"
       ]
     },
     "/home/ay/harmony/OnePool/contracts/test/PeriodicPrizeStrategyListenerStub.sol": {
@@ -3027,7 +2811,7 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/test/YieldSourcePrizePoolHarnessProxyFactory.sol": {
-      "lastModificationDate": 1627092128999,
+      "lastModificationDate": 1627215378611,
       "contentHash": "7eb1d398b23422222f489142feb49a61",
       "sourceName": "contracts/test/YieldSourcePrizePoolHarnessProxyFactory.sol",
       "solcConfig": {
@@ -3174,6 +2958,44 @@
         "PrizeSplitHarness"
       ]
     },
+    "/home/ay/harmony/OnePool/contracts/reserve/Reserve.sol": {
+      "lastModificationDate": 1627090535088,
+      "contentHash": "b36199404b454c8fe91c9e6e847cebfb",
+      "sourceName": "contracts/reserve/Reserve.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "./ReserveInterface.sol",
+        "../prize-pool/PrizePoolInterface.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Reserve"
+      ]
+    },
     "/home/ay/harmony/OnePool/contracts/test/ERC20Mintable.sol": {
       "lastModificationDate": 1627092128995,
       "contentHash": "bb030081db51e30f42997aa57d5f83fd",
@@ -3318,6 +3140,43 @@
       ],
       "artifacts": [
         "console"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/registry/Registry.sol": {
+      "lastModificationDate": 1627090535088,
+      "contentHash": "15dcc7d65e6aaaeb17380e97a961bda0",
+      "sourceName": "contracts/registry/Registry.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "./RegistryInterface.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Registry"
       ]
     },
     "/home/ay/harmony/OnePool/contracts/test/MultipleWinnersHarness.sol": {
@@ -3501,6 +3360,40 @@
         "ExtendedSafeCastExposed"
       ]
     },
+    "/home/ay/harmony/OnePool/contracts/external/openzeppelin/OpenZeppelinProxyFactoryInterface.sol": {
+      "lastModificationDate": 1627090535084,
+      "contentHash": "7e9b2dec49a7cd0822a3ec3924d5fbcf",
+      "sourceName": "contracts/external/openzeppelin/OpenZeppelinProxyFactoryInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "OpenZeppelinProxyFactoryInterface"
+      ]
+    },
     "/home/ay/harmony/OnePool/contracts/test/Timestamp.sol": {
       "lastModificationDate": 1627092128999,
       "contentHash": "1194f5301c15aad9fe9de236b3b8fe10",
@@ -3569,6 +3462,40 @@
       ],
       "artifacts": [
         "UInt256ArrayExposed"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/utils/UInt256Array.sol": {
+      "lastModificationDate": 1627039519556,
+      "contentHash": "606006e5fa9fbd9231af18fe04fbaaee",
+      "sourceName": "contracts/utils/UInt256Array.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UInt256Array"
       ]
     }
   }

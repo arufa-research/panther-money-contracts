@@ -106,12 +106,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
     IERC20Upgradeable[] externalErc20Awards
   );
 
-  struct RngRequest {
-    uint32 id;
-    uint32 lockBlock;
-    uint32 requestedAt;
-  }
-
   /// @notice Semver Version
   string constant public VERSION = "3.4.1";
 
@@ -122,9 +116,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   PrizePool public prizePool;
   TicketInterface public ticket;
   IERC20Upgradeable public sponsorship;
-
-  // Current RNG Request
-  RngRequest internal rngRequest;
 
   /// @notice RNG Request Timeout.  In fact, this is really a "complete award" timeout.
   /// If the rng completes the award can still be cancelled.
@@ -204,7 +195,7 @@ abstract contract PeriodicPrizeStrategy is Initializable,
 
   /// @notice Allows the owner to set the token listener
   /// @param _tokenListener A contract that implements the token listener interface.
-  function setTokenListener(TokenListenerInterface _tokenListener) external onlyOwner requireAwardNotInProgress {
+  function setTokenListener(TokenListenerInterface _tokenListener) external onlyOwner {
     require(address(0) == address(_tokenListener) || address(_tokenListener).supportsInterface(TokenListenerLibrary.ERC165_INTERFACE_ID_TOKEN_LISTENER), "PeriodicPrizeStrategy/token-listener-invalid");
 
     tokenListener = _tokenListener;
@@ -328,10 +319,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   function beforeTokenTransfer(address from, address to, uint256 amount, address controlledToken) external override onlyPrizePool {
     require(from != to, "PeriodicPrizeStrategy/transfer-to-self");
 
-    if (controlledToken == address(ticket)) {
-      _requireAwardNotInProgress();
-    }
-
     if (address(tokenListener) != address(0)) {
       tokenListener.beforeTokenTransfer(from, to, amount, controlledToken);
     }
@@ -349,9 +336,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
     override
     onlyPrizePool
   {
-    if (controlledToken == address(ticket)) {
-      _requireAwardNotInProgress();
-    }
     if (address(tokenListener) != address(0)) {
       tokenListener.beforeTokenMint(to, amount, controlledToken, referrer);
     }
@@ -384,7 +368,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   /// @notice Completes the award process and awards the winners.  The random number must have been requested and is now available.
   function completeAward() external {
     uint256 randomNumber = uint256(vrf());
-    delete rngRequest;
 
     if (address(beforeAwardListener) != address(0)) {
       beforeAwardListener.beforePrizePoolAwarded(randomNumber, prizePeriodStartedAt);
@@ -404,7 +387,7 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   /// @notice Allows the owner to set a listener that is triggered immediately before the award is distributed
   /// @dev The listener must implement ERC165 and the BeforeAwardListenerInterface
   /// @param _beforeAwardListener The address of the listener contract
-  function setBeforeAwardListener(BeforeAwardListenerInterface _beforeAwardListener) external onlyOwner requireAwardNotInProgress {
+  function setBeforeAwardListener(BeforeAwardListenerInterface _beforeAwardListener) external onlyOwner {
     require(
       address(0) == address(_beforeAwardListener) || address(_beforeAwardListener).supportsInterface(BeforeAwardListenerLibrary.ERC165_INTERFACE_ID_BEFORE_AWARD_LISTENER),
       "PeriodicPrizeStrategy/beforeAwardListener-invalid"
@@ -417,7 +400,7 @@ abstract contract PeriodicPrizeStrategy is Initializable,
 
   /// @notice Allows the owner to set a listener for prize strategy callbacks.
   /// @param _periodicPrizeStrategyListener The address of the listener contract
-  function setPeriodicPrizeStrategyListener(PeriodicPrizeStrategyListenerInterface _periodicPrizeStrategyListener) external onlyOwner requireAwardNotInProgress {
+  function setPeriodicPrizeStrategyListener(PeriodicPrizeStrategyListenerInterface _periodicPrizeStrategyListener) external onlyOwner {
     require(
       address(0) == address(_periodicPrizeStrategyListener) || address(_periodicPrizeStrategyListener).supportsInterface(PeriodicPrizeStrategyListenerLibrary.ERC165_INTERFACE_ID_PERIODIC_PRIZE_STRATEGY_LISTENER),
       "PeriodicPrizeStrategy/prizeStrategyListener-invalid"
@@ -448,7 +431,7 @@ abstract contract PeriodicPrizeStrategy is Initializable,
 
   /// @notice Allows the owner to set the prize period in seconds.
   /// @param _prizePeriodSeconds The new prize period in seconds.  Must be greater than zero.
-  function setPrizePeriodSeconds(uint256 _prizePeriodSeconds) external onlyOwner requireAwardNotInProgress {
+  function setPrizePeriodSeconds(uint256 _prizePeriodSeconds) external onlyOwner {
     _setPrizePeriodSeconds(_prizePeriodSeconds);
   }
 
@@ -471,7 +454,7 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   /// @dev Only the Prize-Strategy owner/creator can assign external tokens,
   /// and they must be approved by the Prize-Pool
   /// @param _externalErc20 The address of an ERC20 token to be awarded
-  function addExternalErc20Award(IERC20Upgradeable _externalErc20) external onlyOwnerOrListener requireAwardNotInProgress {
+  function addExternalErc20Award(IERC20Upgradeable _externalErc20) external onlyOwnerOrListener {
     _addExternalErc20Award(_externalErc20);
   }
 
@@ -484,7 +467,7 @@ abstract contract PeriodicPrizeStrategy is Initializable,
     emit ExternalErc20AwardAdded(_externalErc20);
   }
 
-  function addExternalErc20Awards(IERC20Upgradeable[] calldata _externalErc20s) external onlyOwnerOrListener requireAwardNotInProgress {
+  function addExternalErc20Awards(IERC20Upgradeable[] calldata _externalErc20s) external onlyOwnerOrListener {
     for (uint256 i = 0; i < _externalErc20s.length; i++) {
       _addExternalErc20Award(_externalErc20s[i]);
     }
@@ -495,7 +478,7 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   /// @param _externalErc20 The address of an ERC20 token to be removed
   /// @param _prevExternalErc20 The address of the previous ERC20 token in the `externalErc20s` list.
   /// If the ERC20 is the first address, then the previous address is the SENTINEL address: 0x0000000000000000000000000000000000000001
-  function removeExternalErc20Award(IERC20Upgradeable _externalErc20, IERC20Upgradeable _prevExternalErc20) external onlyOwner requireAwardNotInProgress {
+  function removeExternalErc20Award(IERC20Upgradeable _externalErc20, IERC20Upgradeable _prevExternalErc20) external onlyOwner {
     externalErc20s.removeAddress(address(_prevExternalErc20), address(_externalErc20));
     emit ExternalErc20AwardRemoved(_externalErc20);
   }
@@ -518,7 +501,7 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   /// NOTE: The NFT must already be owned by the Prize-Pool
   /// @param _externalErc721 The address of an ERC721 token to be awarded
   /// @param _tokenIds An array of token IDs of the ERC721 to be awarded
-  function addExternalErc721Award(IERC721Upgradeable _externalErc721, uint256[] calldata _tokenIds) external onlyOwnerOrListener requireAwardNotInProgress {
+  function addExternalErc721Award(IERC721Upgradeable _externalErc721, uint256[] calldata _tokenIds) external onlyOwnerOrListener {
     require(prizePool.canAwardExternal(address(_externalErc721)), "PeriodicPrizeStrategy/cannot-award-external");
     require(address(_externalErc721).supportsInterface(Constants.ERC165_INTERFACE_ID_ERC721), "PeriodicPrizeStrategy/erc721-invalid");
     
@@ -554,7 +537,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   )
     external
     onlyOwner
-    requireAwardNotInProgress
   {
     externalErc721s.removeAddress(address(_prevExternalErc721), address(_externalErc721));
     _removeExternalErc721AwardTokens(_externalErc721);
@@ -569,29 +551,11 @@ abstract contract PeriodicPrizeStrategy is Initializable,
     emit ExternalErc721AwardRemoved(_externalErc721);
   }
 
-  function _requireAwardNotInProgress() internal view {
-    uint256 currentBlock = _currentBlock();
-    require(rngRequest.lockBlock == 0 || currentBlock < rngRequest.lockBlock, "PeriodicPrizeStrategy/rng-in-flight");
-  }
-
-  function isRngTimedOut() public view returns (bool) {
-    if (rngRequest.requestedAt == 0) {
-      return false;
-    } else {
-      return _currentTime() > uint256(rngRequestTimeout).add(rngRequest.requestedAt);
-    }
-  }
-
   modifier onlyOwnerOrListener() {
     require(_msgSender() == owner() ||
             _msgSender() == address(periodicPrizeStrategyListener) ||
             _msgSender() == address(beforeAwardListener),
             "PeriodicPrizeStrategy/only-owner-or-listener");
-    _;
-  }
-
-  modifier requireAwardNotInProgress() {
-    _requireAwardNotInProgress();
     _;
   }
 

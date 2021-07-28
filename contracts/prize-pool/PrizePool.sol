@@ -11,7 +11,6 @@ import "@openzeppelin/contracts-upgradeable/introspection/ERC165CheckerUpgradeab
 import "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol";
 import "@pooltogether/fixed-point/contracts/FixedPoint.sol";
 
-import "../external/compound/ICompLike.sol";
 import "../registry/RegistryInterface.sol";
 import "../reserve/ReserveInterface.sol";
 import "../token/TokenListenerInterface.sol";
@@ -822,15 +821,6 @@ abstract contract PrizePool is PrizePoolInterface, OwnableUpgradeable, Reentranc
   /// @return The current total of all tokens
   function accountedBalance() external override view returns (uint256) {
     return _tokenTotalSupply();
-  }
-
-  /// @notice Delegate the votes for a Compound COMP-like token held by the prize pool
-  /// @param compLike The COMP-like token held by the prize pool that should be delegated
-  /// @param to The address to delegate to 
-  function compLikeDelegate(ICompLike compLike, address to) external onlyOwner {
-    if (compLike.balanceOf(address(this)) > 0) {
-      compLike.delegate(to);
-    }
   }
   
   /// @notice Required for ERC721 safe token transfers from smart contracts.
