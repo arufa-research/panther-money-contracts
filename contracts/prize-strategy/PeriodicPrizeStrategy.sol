@@ -43,16 +43,12 @@ abstract contract PeriodicPrizeStrategy is Initializable,
 
   event PrizePoolAwardStarted(
     address indexed operator,
-    address indexed prizePool,
-    uint32 indexed rngRequestId,
-    uint32 rngLockBlock
+    address indexed prizePool
   );
 
   event PrizePoolAwardCancelled(
     address indexed operator,
-    address indexed prizePool,
-    uint32 indexed rngRequestId,
-    uint32 rngLockBlock
+    address indexed prizePool
   );
 
   event PrizePoolAwarded(
@@ -62,10 +58,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
 
   event TokenListenerUpdated(
     TokenListenerInterface indexed tokenListener
-  );
-
-  event RngRequestTimeoutSet(
-    uint32 rngRequestTimeout
   );
 
   event PrizePeriodSecondsUpdated(
@@ -116,10 +108,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
   PrizePool public prizePool;
   TicketInterface public ticket;
   IERC20Upgradeable public sponsorship;
-
-  /// @notice RNG Request Timeout.  In fact, this is really a "complete award" timeout.
-  /// If the rng completes the award can still be cancelled.
-  uint32 public rngRequestTimeout;
 
   // Prize period
   uint256 public prizePeriodSeconds;

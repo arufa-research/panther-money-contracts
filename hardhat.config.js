@@ -17,7 +17,7 @@ const networks = {
     allowUnlimitedContractSize: true
   },
   localhost: {
-    chainId: 1,
+    chainId: 31337,
     url: 'http://127.0.0.1:8545',
     allowUnlimitedContractSize: true,
     timeout: 1000 * 60
@@ -37,7 +37,16 @@ const networks = {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.6.12",
+  solidity: {
+    version: "0.6.12",
+    settings:{
+      optimizer: {
+        enabled: true,
+        runs: 200
+      },
+      evmVersion: "istanbul"
+    }
+  },
   networks
 };
 

@@ -9,9 +9,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -46,9 +47,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -83,9 +85,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -121,9 +124,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -159,9 +163,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -186,16 +191,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/drafts/ERC20PermitUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606218,
       "contentHash": "3e510705706431f5c73bdc56d616424d",
       "sourceName": "@openzeppelin/contracts-upgradeable/drafts/ERC20PermitUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -234,9 +240,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -268,9 +275,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -298,16 +306,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
-      "lastModificationDate": 1627039871907,
+      "lastModificationDate": 1627601607779,
       "contentHash": "4404d773c16609e9c316b0acaa487556",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -337,16 +346,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/drafts/IERC20PermitUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606218,
       "contentHash": "851cd6f51cf3b2cbebe86458c2d3d4c1",
       "sourceName": "@openzeppelin/contracts-upgradeable/drafts/IERC20PermitUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -371,16 +381,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/cryptography/ECDSAUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606218,
       "contentHash": "8fe21554560075593b87ae37a30dea42",
       "sourceName": "@openzeppelin/contracts-upgradeable/cryptography/ECDSAUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -405,16 +416,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "8cba95f8a22b2fb5aad5aa6cede94288",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -441,16 +453,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/drafts/EIP712Upgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606218,
       "contentHash": "561a5b469b2870291fdecd726e3f7501",
       "sourceName": "@openzeppelin/contracts-upgradeable/drafts/EIP712Upgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -477,16 +490,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/proxy/Initializable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "71b3ac8d4da61bb6c6708c12f56e3c1f",
       "sourceName": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -513,16 +527,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "9f901c17a18eadc08042b6a510da3b7d",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -549,16 +564,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
-      "lastModificationDate": 1627039871907,
+      "lastModificationDate": 1627601607779,
       "contentHash": "6c8edd65243ec9d6eb91cc63cce2cd16",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -583,16 +599,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606222,
       "contentHash": "33cad0216fea16ce4baadc5603b84218",
       "sourceName": "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -617,16 +634,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "aa72beb3bf14f8394b4a8a292d66589c",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -658,9 +676,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -690,16 +709,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/sortition-sum-tree-factory/contracts/SortitionSumTreeFactory.sol": {
-      "lastModificationDate": 1627039871659,
+      "lastModificationDate": 1627601607511,
       "contentHash": "6f02b25238e8d1a1dd01ba2a3f038fdb",
       "sourceName": "sortition-sum-tree-factory/contracts/SortitionSumTreeFactory.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -724,16 +744,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@pooltogether/uniform-random-number/contracts/UniformRandomNumber.sol": {
-      "lastModificationDate": 1627039871015,
+      "lastModificationDate": 1627601606230,
       "contentHash": "a5ea77b95a380547da51f2d5f9f02da8",
       "sourceName": "@pooltogether/uniform-random-number/contracts/UniformRandomNumber.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -765,9 +786,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -799,9 +821,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -836,9 +859,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -866,16 +890,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/prize-strategy/multiple-winners/MultipleWinners.sol": {
-      "lastModificationDate": 1627201611001,
-      "contentHash": "27c8ae94b76871f59d7d306c82b52173",
+      "lastModificationDate": 1627590122858,
+      "contentHash": "027aa801ccecb0a7945d53c1190b064c",
       "sourceName": "contracts/prize-strategy/multiple-winners/MultipleWinners.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -910,9 +935,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -940,16 +966,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/prize-strategy/PeriodicPrizeStrategy.sol": {
-      "lastModificationDate": 1627201525805,
-      "contentHash": "555f6edc7c6524425bb648e8dab62516",
+      "lastModificationDate": 1627590259732,
+      "contentHash": "f328130f0f8d822adf1cf1ce84b0c6e0",
       "sourceName": "contracts/prize-strategy/PeriodicPrizeStrategy.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -992,16 +1019,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606218,
       "contentHash": "91a7735bfcbb48c7482f10f1083a8ed8",
       "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1029,16 +1057,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "2910161b0b590ef5dca8ae52bfaf8873",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1063,16 +1092,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/introspection/ERC165CheckerUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606218,
       "contentHash": "92acf2949d383e9e294ed4a23cf0cf51",
       "sourceName": "@openzeppelin/contracts-upgradeable/introspection/ERC165CheckerUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1097,16 +1127,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol": {
-      "lastModificationDate": 1627039871907,
+      "lastModificationDate": 1627601607779,
       "contentHash": "baee93b27b5b91092cb32dd0b22d0a4d",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1135,16 +1166,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@pooltogether/fixed-point/contracts/FixedPoint.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "bdb0c64c2b2c834712cd4b58b6eae93e",
       "sourceName": "@pooltogether/fixed-point/contracts/FixedPoint.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1178,9 +1210,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1216,9 +1249,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1267,9 +1301,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1303,9 +1338,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1339,9 +1375,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1373,9 +1410,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1404,16 +1442,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@pooltogether/fixed-point/contracts/external/openzeppelin/OpenZeppelinSafeMath_V3_3_0.sol": {
-      "lastModificationDate": 1627039872303,
+      "lastModificationDate": 1627601608531,
       "contentHash": "2d360a5a5e218684adae580d8559a368",
       "sourceName": "@pooltogether/fixed-point/contracts/external/openzeppelin/OpenZeppelinSafeMath_V3_3_0.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1445,9 +1484,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1481,9 +1521,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1508,16 +1549,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606218,
       "contentHash": "1e80a066fb319fc9752e62673a0e9450",
       "sourceName": "@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1542,16 +1584,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/introspection/IERC1820RegistryUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606222,
       "contentHash": "d6b51d95f558c3c31f39056c3951d769",
       "sourceName": "@openzeppelin/contracts-upgradeable/introspection/IERC1820RegistryUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1576,16 +1619,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "008d2d730bc1f24f3c0fafa29b7a0bd2",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1612,16 +1656,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol": {
-      "lastModificationDate": 1627039871907,
+      "lastModificationDate": 1627601607775,
       "contentHash": "9b8e95b25ad9e9907cef82d4adabe91b",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1648,16 +1693,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol": {
-      "lastModificationDate": 1627039871907,
+      "lastModificationDate": 1627601607775,
       "contentHash": "f7320992df40480ec8045cac518ad11c",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1689,9 +1735,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1723,9 +1770,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1757,9 +1805,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1791,9 +1840,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1828,9 +1878,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1864,9 +1915,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1898,9 +1950,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1931,16 +1984,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@pooltogether/yield-source-interface/contracts/IYieldSource.sol": {
-      "lastModificationDate": 1627039871015,
+      "lastModificationDate": 1627601606230,
       "contentHash": "c667ec192fe22ef883e63652264c2273",
       "sourceName": "@pooltogether/yield-source-interface/contracts/IYieldSource.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -1972,9 +2026,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2009,9 +2064,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2049,9 +2105,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2086,9 +2143,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2129,9 +2187,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2163,9 +2222,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2199,9 +2259,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2230,16 +2291,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/introspection/IERC1820ImplementerUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606222,
       "contentHash": "b31e95ffec4624c3e19ac2a4b9236771",
       "sourceName": "@openzeppelin/contracts-upgradeable/introspection/IERC1820ImplementerUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2264,16 +2326,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC777/IERC777RecipientUpgradeable.sol": {
-      "lastModificationDate": 1627039871907,
+      "lastModificationDate": 1627601607779,
       "contentHash": "d362f3bbee45354fcd6393dafb03ef18",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC777/IERC777RecipientUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2305,9 +2368,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2343,9 +2407,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2372,16 +2437,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/test/PeriodicPrizeStrategyHarness.sol": {
-      "lastModificationDate": 1627092128995,
-      "contentHash": "34fcda5c4a882a4ac2b6328a68921ba2",
+      "lastModificationDate": 1627590262188,
+      "contentHash": "44813b1ca54a3b2f8a95caad3ed813bd",
       "sourceName": "contracts/test/PeriodicPrizeStrategyHarness.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2416,9 +2482,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2452,9 +2519,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2481,16 +2549,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/introspection/ERC165Upgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606218,
       "contentHash": "2fe109cd8f5cb2cc237b5e6a7e99edd7",
       "sourceName": "@openzeppelin/contracts-upgradeable/introspection/ERC165Upgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2518,16 +2587,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol": {
-      "lastModificationDate": 1627039871907,
+      "lastModificationDate": 1627601607775,
       "contentHash": "257300f2edf6321055d08d824bfc7440",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2565,16 +2635,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721MetadataUpgradeable.sol": {
-      "lastModificationDate": 1627039871907,
+      "lastModificationDate": 1627601607775,
       "contentHash": "2d7026b65054974c694449d3f243bb39",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721MetadataUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2601,16 +2672,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721EnumerableUpgradeable.sol": {
-      "lastModificationDate": 1627039871907,
+      "lastModificationDate": 1627601607775,
       "contentHash": "91be9105f64b0e3ef04ca0672e5249d5",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721EnumerableUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2637,16 +2709,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "b927cbeb303f88e9f6b38fdc71a5d381",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2671,16 +2744,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/EnumerableMapUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "4ff02b74113158b1360f1eb85a7be7f3",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/EnumerableMapUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2705,16 +2779,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
-      "lastModificationDate": 1627039871007,
+      "lastModificationDate": 1627601606226,
       "contentHash": "f00ef76e89770e6a3e3f0e4da0844794",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2746,9 +2821,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2782,9 +2858,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2818,9 +2895,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2855,9 +2933,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2892,9 +2971,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2928,9 +3008,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -2966,9 +3047,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3004,9 +3086,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3040,9 +3123,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3077,9 +3161,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3109,16 +3194,17 @@
       ]
     },
     "/home/ay/harmony/OnePool/node_modules/hardhat/console.sol": {
-      "lastModificationDate": 1627039870343,
+      "lastModificationDate": 1627601604958,
       "contentHash": "cc4777addd464ea56fa35b1c45df0591",
       "sourceName": "hardhat/console.sol",
       "solcConfig": {
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3150,9 +3236,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3187,9 +3274,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3223,9 +3311,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3260,9 +3349,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3296,9 +3386,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3332,9 +3423,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3368,9 +3460,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3402,9 +3495,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3436,9 +3530,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [
@@ -3472,9 +3567,10 @@
         "version": "0.6.12",
         "settings": {
           "optimizer": {
-            "enabled": false,
+            "enabled": true,
             "runs": 200
           },
+          "evmVersion": "istanbul",
           "outputSelection": {
             "*": {
               "*": [

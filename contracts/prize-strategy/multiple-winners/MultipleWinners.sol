@@ -99,7 +99,7 @@ contract MultipleWinners is PeriodicPrizeStrategy, PrizeSplit {
     * @param _user Address of blocked user
     * @param _isBlocked Blocked Status (true or false) of user
   */
-  function setBlocklisted(address _user, bool _isBlocked) external onlyOwner requireAwardNotInProgress returns (bool) {
+  function setBlocklisted(address _user, bool _isBlocked) external onlyOwner returns (bool) {
     isBlocklisted[_user] = _isBlocked;
 
     emit BlocklistSet(_user, _isBlocked);
@@ -112,7 +112,7 @@ contract MultipleWinners is PeriodicPrizeStrategy, PrizeSplit {
     * @dev Toggles if the main prize (prizePool.captureAwardBalance) and secondary prizes (LootBox) should be kept for the next draw or evenly distrubted if maximum number of winners is not selected. 
     * @param _carry Award carry over status (true or false)
   */
-  function setCarryBlocklist(bool _carry) external onlyOwner requireAwardNotInProgress returns (bool) {
+  function setCarryBlocklist(bool _carry) external onlyOwner returns (bool) {
     carryOverBlocklist = _carry;
 
     emit BlocklistCarrySet(_carry);
@@ -125,7 +125,7 @@ contract MultipleWinners is PeriodicPrizeStrategy, PrizeSplit {
     * @dev Limits winner selection (ticket.draw) retries to avoid to gas limit reached errors. Increases the probability of not reaching the maximum number of winners if to low.
     * @param _count Number of retry attempts
   */
-  function setBlocklistRetryCount(uint256 _count) external onlyOwner requireAwardNotInProgress returns (bool) {
+  function setBlocklistRetryCount(uint256 _count) external onlyOwner returns (bool) {
     blocklistRetryCount = _count;
 
     emit BlocklistRetryCountSet(_count);
@@ -138,7 +138,7 @@ contract MultipleWinners is PeriodicPrizeStrategy, PrizeSplit {
     * @dev Toggle external ERC20 awards for all prize winners. If unset will distribute external ERC20 awards to main winner.
     * @param _splitExternalErc20Awards Toggle splitting external ERC20 awards.
   */
-  function setSplitExternalErc20Awards(bool _splitExternalErc20Awards) external onlyOwner requireAwardNotInProgress {
+  function setSplitExternalErc20Awards(bool _splitExternalErc20Awards) external onlyOwner {
     splitExternalErc20Awards = _splitExternalErc20Awards;
 
     emit SplitExternalErc20AwardsSet(splitExternalErc20Awards);
@@ -149,7 +149,7 @@ contract MultipleWinners is PeriodicPrizeStrategy, PrizeSplit {
     * @dev Sets maximum number of winners per award distribution period.
     * @param count Number of winners.
   */
-  function setNumberOfWinners(uint256 count) external onlyOwner requireAwardNotInProgress {
+  function setNumberOfWinners(uint256 count) external onlyOwner {
     _setNumberOfWinners(count);
   }
 

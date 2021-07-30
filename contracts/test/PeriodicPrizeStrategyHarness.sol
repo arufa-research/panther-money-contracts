@@ -21,11 +21,6 @@ contract PeriodicPrizeStrategyHarness is PeriodicPrizeStrategy {
     return time;
   }
 
-  function setRngRequest(uint32 requestId, uint32 lockBlock) external {
-    rngRequest.id = requestId;
-    rngRequest.lockBlock = lockBlock;
-  }
-
   function _distribute(uint256 randomNumber) internal override {
     distributor.distribute(randomNumber);
   }
