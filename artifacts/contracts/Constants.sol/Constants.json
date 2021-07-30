@@ -1,0 +1,89 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Constants",
+  "sourceName": "contracts/Constants.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ACCEPT_MAGIC",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ERC165_INTERFACE_ID_ERC165",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ERC165_INTERFACE_ID_ERC721",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "REGISTRY",
+      "outputs": [
+        {
+          "internalType": "contract IERC1820RegistryUpgradeable",
+          "name": "",
+          "type": "IERC1820RegistryUpgradeable"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "TOKENS_RECIPIENT_INTERFACE_HASH",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "TOKENS_SENDER_INTERFACE_HASH",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6101bc610026600b82828239805160001a60731461001957fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361061006c5760003560e01c806306433b1b146100715780634e39bfb614610095578063669b0532146100af57806372581cc0146100b7578063a5ab436d146100bf578063c92669ed146100e4575b600080fd5b6100796100ec565b604080516001600160a01b039092168252519081900360200190f35b61009d610104565b60408051918252519081900360200190f35b61009d610128565b61009d61014c565b6100c7610170565b604080516001600160e01b03199092168252519081900360200190f35b6100c761017b565b731820a4b7618bde71dce8cdc73aab6c95905fad2481565b7fa2ef4600d742022d532d4747cb3547474667d6f13804902513b2ec01c848f4b481565b7f29ddb589b1fb5fc7cf394961c1adf5f8c6454761adf795e67fe149f658abe89581565b7fb281fc8c12954d22544db45de3159a39272895b169a852b314f9cc762e44c53b81565b6301ffc9a760e01b81565b6380ac58cd60e01b8156fea264697066735822122060d6bb3a6e59111814643f4e3fb3bee466e0af135b8f2b283711fcc406a4d05e64736f6c634300060c0033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361061006c5760003560e01c806306433b1b146100715780634e39bfb614610095578063669b0532146100af57806372581cc0146100b7578063a5ab436d146100bf578063c92669ed146100e4575b600080fd5b6100796100ec565b604080516001600160a01b039092168252519081900360200190f35b61009d610104565b60408051918252519081900360200190f35b61009d610128565b61009d61014c565b6100c7610170565b604080516001600160e01b03199092168252519081900360200190f35b6100c761017b565b731820a4b7618bde71dce8cdc73aab6c95905fad2481565b7fa2ef4600d742022d532d4747cb3547474667d6f13804902513b2ec01c848f4b481565b7f29ddb589b1fb5fc7cf394961c1adf5f8c6454761adf795e67fe149f658abe89581565b7fb281fc8c12954d22544db45de3159a39272895b169a852b314f9cc762e44c53b81565b6301ffc9a760e01b81565b6380ac58cd60e01b8156fea264697066735822122060d6bb3a6e59111814643f4e3fb3bee466e0af135b8f2b283711fcc406a4d05e64736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

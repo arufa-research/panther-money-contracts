@@ -1,0 +1,54 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "PeriodicPrizeStrategyListenerStub",
+  "sourceName": "contracts/test/PeriodicPrizeStrategyListenerStub.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Awarded",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "randomNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "prizePeriodStartedAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "afterPrizePoolAwarded",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061012a806100206000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806301ffc9a7146037578063575072c614606f575b600080fd5b605b60048036036020811015604b57600080fd5b50356001600160e01b0319166091565b604080519115158252519081900360200190f35b608f60048036036040811015608357600080fd5b508035906020013560c7565b005b60006001600160e01b031982166301ffc9a760e01b148060c157506001600160e01b03198216632ba8396360e11b145b92915050565b6040517fff25434fb2c7a5b6e29600471de5f2b833288fc8658779d4766cb8f8f6fbdc3090600090a1505056fea264697066735822122098ad833fbb65c6c23f8ae85b4ea3e3e7d1159824d9c0e7a0bbc7783ece927dc364736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806301ffc9a7146037578063575072c614606f575b600080fd5b605b60048036036020811015604b57600080fd5b50356001600160e01b0319166091565b604080519115158252519081900360200190f35b608f60048036036040811015608357600080fd5b508035906020013560c7565b005b60006001600160e01b031982166301ffc9a760e01b148060c157506001600160e01b03198216632ba8396360e11b145b92915050565b6040517fff25434fb2c7a5b6e29600471de5f2b833288fc8658779d4766cb8f8f6fbdc3090600090a1505056fea264697066735822122098ad833fbb65c6c23f8ae85b4ea3e3e7d1159824d9c0e7a0bbc7783ece927dc364736f6c634300060c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

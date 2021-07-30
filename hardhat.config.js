@@ -1,5 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
-
+const secret = require('./secret.json');
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
 task("accounts", "Prints the list of accounts", async () => {
@@ -25,7 +25,7 @@ const networks = {
   harmonyTestnet: {
     url: 'https://api.s0.b.hmny.io',
     chainId: 1666700000,
-    
+    accounts: [secret.key]
   }
 }
 
