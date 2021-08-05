@@ -25,7 +25,16 @@ const networks = {
   harmonyTestnet: {
     url: 'https://api.s0.b.hmny.io',
     chainId: 1666700000,
-    accounts: [secret.key]
+    accounts: [secret.key],
+    gas: 2100000,
+    gasPrice: 8000000000
+  },
+  binanceTestnet: {
+    url: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
+    chainId: 97,
+    accounts: [secret.key],
+    //gas: 2100000,
+    //gasPrice: 8000000000
   }
 }
 
