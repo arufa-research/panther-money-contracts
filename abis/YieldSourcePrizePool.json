@@ -1,7 +1,5 @@
 {
-  "_format": "hh-sol-artifact-1",
-  "contractName": "YieldSourcePrizePool",
-  "sourceName": "contracts/prize-pool/yield-source/YieldSourcePrizePool.sol",
+  "address": "0x4e8711fC03ae013ab51e8aA96F05B75d5e3C8534",
   "abi": [
     {
       "anonymous": false,

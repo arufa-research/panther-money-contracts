@@ -82,7 +82,7 @@ async function main() {
   ]);
 
   const prizePool = await getContractAt(
-    YieldSourcePrizePool,
+    YieldSourcePrizePool.abi,
     yieldSourcePrizePoolInitializedEvent[yieldSourcePrizePoolInitializedEvent.length - 1]?.args[
       'prizePool'
     ]
