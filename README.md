@@ -2,7 +2,7 @@
 Buy a ticket for the no-loss lottery. Each week, the interest generated from the entire ticket pool is sent to one lucky winner. Get your money back whenever you like.
 
 ## Frontend Deployment
-- https://vg0j9d9cko2rr67bevi1bll8igrp7vrd4eot2i3lg26lohm168j9org.siasky.net/
+- https://vg6luhn1cf3tcu4tq09ja0pvstljsjds1bemmppr6t6b0vuh7cumkb0.siasky.net/pool/VIPER
 
 ## Contracts Deployments
 - harmony testnet: Viper Pool
