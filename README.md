@@ -2,7 +2,7 @@
 Buy a ticket for the no-loss lottery. Each week, the interest generated from the entire ticket pool is sent to one lucky winner. Get your money back whenever you like.
 
 ## Frontend Deployment
-- https://vg6luhn1cf3tcu4tq09ja0pvstljsjds1bemmppr6t6b0vuh7cumkb0.siasky.net
+- https://harmony-pool.herokuapp.com/
 
 ## Contracts Deployments
 - harmony testnet: Viper Pool
