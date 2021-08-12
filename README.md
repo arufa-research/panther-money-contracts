@@ -6,8 +6,8 @@ Buy a ticket for the no-loss lottery. Each week, the interest generated from the
 
 ## Contracts Deployments
 - harmony testnet: Viper Pool
-- PrizePool: [one197jphdz78zdnv65hhp455avf5l2f42n0rdge8f](https://explorer.testnet.harmony.one/#/address/one197jphdz78zdnv65hhp455avf5l2f42n0rdge8f)
-- PrizeStrategy: [one1460u4p4g545uce8fnunznjukahct7jddgz4erq](https://explorer.testnet.harmony.one/#/address/one1460u4p4g545uce8fnunznjukahct7jddgz4erq)
+- PrizePool: [one1za93cr4d90q4jnlfzjyfrjuek6xayepdrrz2f2](https://explorer.testnet.harmony.one/#/address/one1za93cr4d90q4jnlfzjyfrjuek6xayepdrrz2f2)
+- PrizeStrategy: [one1zpdn8ah2dly5lf3zp4393hyk9h9pe935h4x420](https://explorer.testnet.harmony.one/#/address/one1zpdn8ah2dly5lf3zp4393hyk9h9pe935h4x420)
 
 ## Follow-Ups
 - Add One Pool
