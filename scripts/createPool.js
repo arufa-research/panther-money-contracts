@@ -9,8 +9,8 @@ const ControlledToken = require('../abis/ControlledToken.json');
 const MultipleWinners = require('../abis/MultipleWinners.json');
 const YieldSourcePrizePool = require('../abis/YieldSourcePrizePool.json');
 
-VIPERPIT_TESTNET_ADDRESS = "0x122A621c2fEC177Cf72a802afbB8bDD99d524C95";
-VIPER_TOKEN_TESTNET_ADDRESS = "0x7466d7d0C21Fa05F32F5a0Fa27e12bdC06348Ce2";
+VIPERPIT_TESTNET_ADDRESS = "0x98b792BD73E10CF96b9f7b3A34baCdCe06349e3b";
+VIPER_TOKEN_TESTNET_ADDRESS = "0x11F477aE5f42335928fC94601a8A81ec77b27b2b";
 
 async function main() {
   const { ethers } = hre;
@@ -25,7 +25,7 @@ async function main() {
   // await hre.run('compile');
   const poolBuilder = await getContractAt(
     PoolWithMultipleWinnersBuilder.abi,
-    "0x024C92186810d17Eb37EE00ee9e09a3aE4217323"
+    "0xA36430d678C387fa4334E480abA4eCe2e72Ec0ad"
   );
 
   const block = await getBlock(await getBlockNumber());
@@ -33,14 +33,14 @@ async function main() {
   //console.log("Block number: ", block);
 
   const viperPrizePoolConfig = {
-    yieldSource: "0xBb7a17DA58c9aE5C9BC3790276106550eFDab806",
+    yieldSource: "0x1EA0a6bCF36cD2A2cA42C9c42730dA86A0365067",
     maxExitFeeMantissa: ethers.utils.parseEther("0.1"),
     maxTimelockDuration: 300,
   };
 
   const multipleWinnersConfig = {
-    prizePeriodStart: block.timestamp,
-    prizePeriodSeconds: 1,
+    prizePeriodStart: 1628604603,
+    prizePeriodSeconds: 604800, // 7 days
     ticketName: "TICKET",
     ticketSymbol: "TICK",
     sponsorshipName: "SPONSORSHIP",
@@ -55,7 +55,7 @@ async function main() {
   const yieldSourceMultipleWinnersTx = await poolBuilder.createYieldSourceMultipleWinners(
     viperPrizePoolConfig,
     multipleWinnersConfig,
-    8
+    18
   );
 
   console.log(yieldSourceMultipleWinnersTx.hash);
@@ -88,7 +88,7 @@ async function main() {
     ]
   );
 
-  console.log("Prize Pool: ", prizePool);
+  //console.log("Prize Pool: ", prizePool);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

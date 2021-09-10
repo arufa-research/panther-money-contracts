@@ -26,7 +26,7 @@ const networks = {
     url: 'https://api.s0.b.hmny.io',
     chainId: 1666700000,
     accounts: [secret.key],
-    gas: 2100000,
+    gas: 21000000,
     gasPrice: 8000000000
   },
   binanceTestnet: {

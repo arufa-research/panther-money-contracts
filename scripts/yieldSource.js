@@ -5,8 +5,8 @@
 // Runtime Environment's members available in the global scope.
 const hre = require("hardhat");
 
-VIPERPIT_TESTNET_ADDRESS = "0x122A621c2fEC177Cf72a802afbB8bDD99d524C95";
-VIPER_TOKEN_TESTNET_ADDRESS = "0x7466d7d0C21Fa05F32F5a0Fa27e12bdC06348Ce2";
+VIPERPIT_TESTNET_ADDRESS = "0x98b792BD73E10CF96b9f7b3A34baCdCe06349e3b";
+VIPER_TOKEN_TESTNET_ADDRESS = "0x11F477aE5f42335928fC94601a8A81ec77b27b2b";
 
 COBRAPIT_TESTNET_ADDRESS = "0x11110118d34FdE9c609E072D05C017C74190B758";
 COBRA_TOKEN_TESTNET_ADDRESS = "0x6d88599555beda404f8df2b9484e867e7d03eddf";
@@ -22,8 +22,8 @@ async function main() {
   // We get the contract to deploy
   const yieldSource = await hre.ethers.getContractFactory("ViperPitSource");
   const viper = await yieldSource.deploy(
-    COBRAPIT_TESTNET_ADDRESS,
-    COBRA_TOKEN_TESTNET_ADDRESS
+    VIPERPIT_TESTNET_ADDRESS,
+    VIPER_TOKEN_TESTNET_ADDRESS
   );
 
   console.log("Yield Source deployed: ", viper.address);
