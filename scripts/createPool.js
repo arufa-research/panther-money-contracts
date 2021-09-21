@@ -88,7 +88,7 @@ async function main() {
     ]
   );
 
-  //console.log("Prize Pool: ", prizePool);
+  console.log("Prize Pool: ", prizePool);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
