@@ -80,7 +80,7 @@ contract ViperPitSource is IYieldSource, ReentrancyGuard {
         if (balances[addr] == 0) return 0;
 
         uint256 totalShares = viperPit.totalSupply();
-        uint256 viperPitBalance = viperPit.balance();
+        uint256 viperPitBalance = viperAddr.balanceOf(address(viperPit));
 
         return balances[addr].mul(viperPitBalance).div(totalShares);
     }

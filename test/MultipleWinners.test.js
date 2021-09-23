@@ -54,9 +54,6 @@ describe('MultipleWinners', function() {
     const ControlledToken = await hre.artifacts.readArtifact("ControlledToken")
     sponsorship = await deployMockContract(wallet, ControlledToken.abi, overrides)
 
-    const RNGInterface = await hre.artifacts.readArtifact("RNGInterface")
-    rng = await deployMockContract(wallet, RNGInterface.abi, overrides)
-
     rngFeeToken = await deployMockContract(wallet, IERC20.abi, overrides)
     externalERC20Award = await deployMockContract(wallet, IERC20.abi, overrides)
 

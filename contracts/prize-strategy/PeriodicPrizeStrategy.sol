@@ -150,7 +150,6 @@ abstract contract PeriodicPrizeStrategy is Initializable,
     _setPrizePeriodSeconds(_prizePeriodSeconds);
 
     __Ownable_init();
-    //Constants.REGISTRY.setInterfaceImplementer(address(this), Constants.TOKENS_RECIPIENT_INTERFACE_HASH, address(this));
 
     externalErc20s.initialize();
     for (uint256 i = 0; i < externalErc20Awards.length; i++) {
