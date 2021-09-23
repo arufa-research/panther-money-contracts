@@ -116,7 +116,7 @@ contract ViperPitSource is IYieldSource, ReentrancyGuard {
         uint256 totalShares = pit.totalSupply();
         if (totalShares == 0) return 0;
 
-        uint256 viperPitBalance = pit.balanceOf(address(this));
+        uint256 viperPitBalance = pit.balanceOf(address(pit));
         if (viperPitBalance == 0) return 0;
 
         uint256 sushiBeforeBalance = viper.balanceOf(address(this));
