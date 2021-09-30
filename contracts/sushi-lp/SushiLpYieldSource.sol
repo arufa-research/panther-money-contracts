@@ -147,7 +147,7 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
     }
 
     /// @notice harvest rewards convert them back to lp token
-    function harvest() {
+    function harvest() external nonReentrant returns (bool) {
         miniChef.harvest(7, address(this));
 
         uint256 earned_sushi = IERC20(SUSHI).balanceOf(address(this));
@@ -189,6 +189,6 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
             address(this),
             now
         );
-    
+        return true;
     }
 }

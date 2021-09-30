@@ -6,9 +6,8 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
 
-import "@pooltogether/yield-source-interface/contracts/IYieldSource.sol";
-
 import "../PrizePool.sol";
+import "../../sushi-lp/IYieldSource.sol";
 
 contract YieldSourcePrizePool is PrizePool {
 
@@ -83,6 +82,6 @@ contract YieldSourcePrizePool is PrizePool {
   /// @notice Harvest and capture award balance
   function captureAwardBalance() external override returns (uint256) {
     yieldSource.harvest();
-    super();
+    PrizePool.captureAwardBalance();
   }
 }

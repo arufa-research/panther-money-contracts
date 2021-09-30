@@ -4,11 +4,11 @@ pragma solidity 0.6.12;
 pragma experimental ABIEncoderV2;
 
 import "@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol";
-import "@pooltogether/yield-source-interface/contracts/IYieldSource.sol";
 
 import "../registry/RegistryInterface.sol";
 import "../prize-pool/yield-source/YieldSourcePrizePoolProxyFactory.sol";
 import "./MultipleWinnersBuilder.sol";
+import "../sushi-lp/IYieldSource.sol";
 
 contract PoolWithMultipleWinnersBuilder {
   using SafeCastUpgradeable for uint256;
