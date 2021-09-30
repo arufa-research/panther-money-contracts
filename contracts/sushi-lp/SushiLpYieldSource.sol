@@ -141,6 +141,7 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
 
     /// @notice harvest rewards convert them back to lp token
     function harvest() {
-        
+        chef.harvest(7, address(this));
+    
     }
 }
