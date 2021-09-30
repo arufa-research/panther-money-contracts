@@ -142,6 +142,47 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
     /// @notice harvest rewards convert them back to lp token
     function harvest() {
         chef.harvest(7, address(this));
+
+        uint256 earned_sushi = IERC20Upgradeable(SUSHI).balanceOf(address(this));
+        if (earned_sushi > 0) {
+            address[] memory path = new address[](2);
+            path[0] = SUSHI;
+            path[1] = ONE;
+            // swap Sushi to One
+            IUniswapRouterV2(SUSHISWAPV2ROUTER).swapExactTokensForTokens(
+                earned_crv,
+                0,
+                path,
+                address(this),
+                now
+            );
+        }
+
+        // convert 50% WONE to WBTC
+         _path = new address[](2);
+         _path[0] = wone;
+         _path[1] = wbtc;
+        IUniswapRouterV2(SUSHISWAPV2ROUTER).swapExactTokensForTokens(
+            IERC20Upgradeable(wone).balanceOf(address(this)).mul(500000).div(MAX_PPM),
+            0, 
+            _path,
+            address(this),
+            now
+        );
+
+        // convert to Sushi/Wone LP Tokens
+        uint256 _sushiAmt = IERC20Upgradeable(SUSHI).balanceOf(address(this));
+        uint256 _oneAmt = IERC20Upgradeable(ONE).balanceOf(address(this));
+        IUniswapRouterV2(SUSHISWAPV2ROUTER).addLiquidity(
+            SUSHI,
+            ONE,
+            _sushiAmt,
+            _oneAmt,
+            _sushiAmt.mul(MAX_PPM - slippage_tolerance).div(MAX_PPM),
+            _oneAmt.mul(MAX_PPM - slippage_tolerance).div(MAX_PPM),
+            address(this),
+            now
+        );
     
     }
 }
