@@ -21,7 +21,7 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
     IMiniChef public immutable miniChef;
 
     /// @notice Interface for the lp token (sushi/wone)
-    IERC20 public immutable lp;
+    IERC20 public immutable lpAddr;
 
     mapping(address => uint256) public balances;
 
@@ -148,16 +148,16 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
 
     /// @notice harvest rewards convert them back to lp token
     function harvest() {
-        chef.harvest(7, address(this));
+        miniChef.harvest(7, address(this));
 
-        uint256 earned_sushi = IERC20Upgradeable(SUSHI).balanceOf(address(this));
+        uint256 earned_sushi = IERC20(SUSHI).balanceOf(address(this));
+        address[] memory path = new address[](2);
         if (earned_sushi > 0) {
-            address[] memory path = new address[](2);
             path[0] = SUSHI;
             path[1] = ONE;
             // swap Sushi to One
             IUniswapRouterV2(SUSHISWAPV2ROUTER).swapExactTokensForTokens(
-                earned_crv,
+                earned_sushi,
                 0,
                 path,
                 address(this),
@@ -165,21 +165,20 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
             );
         }
         // TODO: optimize adding liquidity
-        // convert 50% WONE to SUSHI
-         _path = new address[](2);
-         _path[0] = ONE;
-         _path[1] = SUSHI;
+         path = new address[](2);
+         path[0] = ONE;
+         path[1] = SUSHI;
         IUniswapRouterV2(SUSHISWAPV2ROUTER).swapExactTokensForTokens(
-            IERC20Upgradeable(ONE).balanceOf(address(this)).mul(500000).div(MAX_PPM),
+            IERC20(ONE).balanceOf(address(this)).mul(500000).div(MAX_PPM),
             0, 
-            _path,
+            path,
             address(this),
             now
         );
 
         // convert to Sushi/Wone LP Tokens
-        uint256 _sushiAmt = IERC20Upgradeable(SUSHI).balanceOf(address(this));
-        uint256 _oneAmt = IERC20Upgradeable(ONE).balanceOf(address(this));
+        uint256 _sushiAmt = IERC20(SUSHI).balanceOf(address(this));
+        uint256 _oneAmt = IERC20(ONE).balanceOf(address(this));
         IUniswapRouterV2(SUSHISWAPV2ROUTER).addLiquidity(
             SUSHI,
             ONE,
