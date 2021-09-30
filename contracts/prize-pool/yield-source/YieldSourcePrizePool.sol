@@ -79,4 +79,10 @@ contract YieldSourcePrizePool is PrizePool {
   function _redeem(uint256 redeemAmount) internal override returns (uint256) {
     return yieldSource.redeemToken(redeemAmount);
   }
+
+  /// @notice Harvest and capture award balance
+  function captureAwardBalance() external override returns (uint256) {
+    yieldSource.harvest();
+    super();
+  }
 }

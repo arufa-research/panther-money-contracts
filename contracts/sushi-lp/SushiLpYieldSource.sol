@@ -164,13 +164,13 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
                 now
             );
         }
-
-        // convert 50% WONE to WBTC
+        // TODO: optimize adding liquidity
+        // convert 50% WONE to SUSHI
          _path = new address[](2);
-         _path[0] = wone;
-         _path[1] = wbtc;
+         _path[0] = ONE;
+         _path[1] = SUSHI;
         IUniswapRouterV2(SUSHISWAPV2ROUTER).swapExactTokensForTokens(
-            IERC20Upgradeable(wone).balanceOf(address(this)).mul(500000).div(MAX_PPM),
+            IERC20Upgradeable(ONE).balanceOf(address(this)).mul(500000).div(MAX_PPM),
             0, 
             _path,
             address(this),
