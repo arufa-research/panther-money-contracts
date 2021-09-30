@@ -42,7 +42,7 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
 
     address public constant SUSHISWAPV2ROUTER = 0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506;
     address public constant ONE = 0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a;
-    address public constant SUSHI = 0xbec775cb42abfa4288de81f387a9b1a3c4bc552a;
+    address public constant SUSHI = 0xBEC775Cb42AbFa4288dE81F387a9b1A3c4Bc552A;
     uint256 public constant MAX_PPM = 10**6;
     uint32 public slippage_tolerance = 5000;
 

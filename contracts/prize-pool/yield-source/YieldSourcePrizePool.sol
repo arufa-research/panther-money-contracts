@@ -80,8 +80,8 @@ contract YieldSourcePrizePool is PrizePool {
   }
 
   /// @notice Harvest and capture award balance
-  function captureAwardBalance() external override returns (uint256) {
+  function captureAwardBalance() public override returns (uint256) {
     yieldSource.harvest();
-    PrizePool.captureAwardBalance();
+    super.captureAwardBalance();
   }
 }

@@ -1242,8 +1242,8 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/prize-pool/PrizePool.sol": {
-      "lastModificationDate": 1627482583503,
-      "contentHash": "baeb8c10396a4d96e1da6525b7c249d9",
+      "lastModificationDate": 1633039945809,
+      "contentHash": "aabba03833f3e3a4deaf5595762db19c",
       "sourceName": "contracts/prize-pool/PrizePool.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -1943,8 +1943,8 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/builders/PoolWithMultipleWinnersBuilder.sol": {
-      "lastModificationDate": 1627091133206,
-      "contentHash": "0b2ad24a37408d7cb6ea4a9336fefe78",
+      "lastModificationDate": 1633038976334,
+      "contentHash": "1665ec0c81bb20109e1e520b60272ad6",
       "sourceName": "contracts/builders/PoolWithMultipleWinnersBuilder.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -1971,10 +1971,10 @@
       },
       "imports": [
         "@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol",
-        "@pooltogether/yield-source-interface/contracts/IYieldSource.sol",
         "../registry/RegistryInterface.sol",
         "../prize-pool/yield-source/YieldSourcePrizePoolProxyFactory.sol",
-        "./MultipleWinnersBuilder.sol"
+        "./MultipleWinnersBuilder.sol",
+        "../sushi-lp/IYieldSource.sol"
       ],
       "versionPragmas": [
         "0.6.12"
@@ -2057,8 +2057,8 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/prize-pool/yield-source/YieldSourcePrizePool.sol": {
-      "lastModificationDate": 1627039519552,
-      "contentHash": "cac364fed4ed3439dc2c7197a5ab9956",
+      "lastModificationDate": 1633039993185,
+      "contentHash": "05ea3547f04ee69435b63f77e2f705f6",
       "sourceName": "contracts/prize-pool/yield-source/YieldSourcePrizePool.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -2087,8 +2087,8 @@
         "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
         "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol",
         "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
-        "@pooltogether/yield-source-interface/contracts/IYieldSource.sol",
-        "../PrizePool.sol"
+        "../PrizePool.sol",
+        "../../sushi-lp/IYieldSource.sol"
       ],
       "versionPragmas": [
         "0.6.12"
@@ -3379,8 +3379,8 @@
       ]
     },
     "/home/ay/harmony/OnePool/contracts/viper-stake/ViperYieldSource.sol": {
-      "lastModificationDate": 1632423323074,
-      "contentHash": "7151e049d467f5906b00d0dab6a050da",
+      "lastModificationDate": 1632423814721,
+      "contentHash": "84650a5ae5795fbe208f833d14a7fb7c",
       "sourceName": "contracts/viper-stake/ViperYieldSource.sol",
       "solcConfig": {
         "version": "0.6.12",
@@ -3850,6 +3850,156 @@
       ],
       "artifacts": [
         "UInt256Array"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/sushi-lp/IYieldSource.sol": {
+      "lastModificationDate": 1633038810614,
+      "contentHash": "f0417a521423fb3613976d980c926815",
+      "sourceName": "contracts/sushi-lp/IYieldSource.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "IYieldSource"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/sushi-lp/IMiniChef.sol": {
+      "lastModificationDate": 1632849056089,
+      "contentHash": "fb928c088fa51f74f281bfd603af7700",
+      "sourceName": "contracts/sushi-lp/IMiniChef.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IMiniChef"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/sushi-lp/SushiLpYieldSource.sol": {
+      "lastModificationDate": 1633040021488,
+      "contentHash": "1e24ea2e1f04c01d6d72341aaacd8765",
+      "sourceName": "contracts/sushi-lp/SushiLpYieldSource.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@pooltogether/yield-source-interface/contracts/IYieldSource.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "./IMiniChef.sol",
+        "./IUniswapRouterV2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SushiLpYieldSource"
+      ]
+    },
+    "/home/ay/harmony/OnePool/contracts/sushi-lp/IUniswapRouterV2.sol": {
+      "lastModificationDate": 1633038031178,
+      "contentHash": "e83197259e1b59326e7124b2a69ab67f",
+      "sourceName": "contracts/sushi-lp/IUniswapRouterV2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IUniswapRouterV2"
       ]
     }
   }
