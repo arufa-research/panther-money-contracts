@@ -9,6 +9,7 @@ import "@openzeppelin/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 import "./IMiniChef.sol";
+import "./IUniswapRouterV2.sol";
 
 /// @title A pooltogether yield source for lp chef token
 /// @author Steffel Fenix, coco-sha
@@ -38,6 +39,12 @@ contract SushiLpYieldSource is IYieldSource, ReentrancyGuard {
         uint256 amount,
         address indexed to
     );
+
+    address public constant SUSHISWAPV2ROUTER = 0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506;
+    address public constant ONE = 0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a;
+    address public constant SUSHI = 0xbec775cb42abfa4288de81f387a9b1a3c4bc552a;
+    uint256 public constant MAX_PPM = 10**6;
+    uint32 public slippage_tolerance = 5000;
 
     constructor(IMiniChef _miniChef, IERC20 _lpAddr) public ReentrancyGuard() {
         require(
