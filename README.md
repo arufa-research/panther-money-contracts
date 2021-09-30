@@ -3,6 +3,10 @@ Buy a ticket for the no-loss lottery. Each week, the interest generated from the
 
 - Add SUSHI/WONE LP Pool as a yield source in panther money.
 
+# Contracts
+
+https://github.com/arufa-research/panther-money-contracts/tree/sushi-lp/contracts/sushi-lp
+
 ## Frontend Deployment
 - https://upbeat-dijkstra-c8180b.netlify.app
 
