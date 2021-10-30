@@ -1,12 +1,5 @@
-// We require the Hardhat Runtime Environment explicitly here. This is optional 
-// but useful for running the script in a standalone fashion through `node <script>`.
-//
-// When running the script with `hardhat run <script>` you'll find the Hardhat
-// Runtime Environment's members available in the global scope.
 const hre = require("hardhat");
 const PoolWithMultipleWinnersBuilder = require('../abis/PoolWithMultipleWinnersBuilder.json');
-const ControlledToken = require('../abis/ControlledToken.json');
-const MultipleWinners = require('../abis/MultipleWinners.json');
 const YieldSourcePrizePool = require('../abis/YieldSourcePrizePool.json');
 
 VIPERPIT_TESTNET_ADDRESS = "0x98b792BD73E10CF96b9f7b3A34baCdCe06349e3b";
@@ -14,18 +7,11 @@ VIPER_TOKEN_TESTNET_ADDRESS = "0x11F477aE5f42335928fC94601a8A81ec77b27b2b";
 
 async function main() {
   const { ethers } = hre;
-  const { constants, provider, getContractAt, getContractFactory, getSigners, utils } = ethers;
-  const { AddressZero } = constants;
-  const { getBlock, getBlockNumber, getTransactionReceipt, send } = provider;
-  // Hardhat always runs the compile task when running scripts with its command
-  // line interface.
-  //
-  // If this script is run directly using `node` you may want to call compile 
-  // manually to make sure everything is compiled
-  // await hre.run('compile');
+  const { provider, getContractAt } = ethers;
+  const { getBlock, getBlockNumber, getTransactionReceipt } = provider;
   const poolBuilder = await getContractAt(
     PoolWithMultipleWinnersBuilder.abi,
-    "0xA36430d678C387fa4334E480abA4eCe2e72Ec0ad"
+    "0x7B8000A8A9e238E7648d84ec5E043235762128D2"
   );
 
   const block = await getBlock(await getBlockNumber());
@@ -33,7 +19,7 @@ async function main() {
   //console.log("Block number: ", block);
 
   const viperPrizePoolConfig = {
-    yieldSource: "0x1EA0a6bCF36cD2A2cA42C9c42730dA86A0365067",
+    yieldSource: "0xA11ec9B761E30eeE8D5aE4E7567f22CEDAf5CCB3",
     maxExitFeeMantissa: ethers.utils.parseEther("0.1"),
     maxTimelockDuration: 300,
   };
@@ -41,10 +27,10 @@ async function main() {
   const multipleWinnersConfig = {
     prizePeriodStart: 1628604603,
     prizePeriodSeconds: 604800, // 7 days
-    ticketName: "TICKET",
-    ticketSymbol: "TICK",
+    ticketName: "PANTHERVIPERPPOOL",
+    ticketSymbol: "PNTR-VIPER",
     sponsorshipName: "SPONSORSHIP",
-    sponsorshipSymbol: "SPON",
+    sponsorshipSymbol: "SHIP",
     ticketCreditLimitMantissa: ethers.utils.parseEther("0.1"),
     ticketCreditRateMantissa: "166666666666666",
     numberOfWinners: 1,
