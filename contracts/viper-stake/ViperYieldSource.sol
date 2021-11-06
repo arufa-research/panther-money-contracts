@@ -110,30 +110,26 @@ contract ViperPitSource is IYieldSource, ReentrancyGuard {
     /// @dev The maxiumum that can be called for token() is calculated by balanceOfToken() above.
     /// @return The actual amount of tokens that were redeemed. This may be different from the amount passed due to the fractional math involved.
     function redeemToken(uint256 amount) external override nonReentrant returns (uint256) {
-        IPit pit = viperPit;
-        IERC20 viper = viperAddr;
-
-        uint256 totalShares = pit.totalSupply();
+        uint256 totalShares = viperPit.totalSupply();
         if (totalShares == 0) return 0;
 
-        uint256 viperPitBalance = pit.balanceOf(address(pit));
+        uint256 viperPitBalance = viperAddr.balanceOf(address(viperPit));
         if (viperPitBalance == 0) return 0;
 
-        uint256 sushiBeforeBalance = viper.balanceOf(address(this));
+        uint256 sushiBeforeBalance = viperAddr.balanceOf(address(this));
 
         uint256 requiredShares = ((amount.mul(totalShares).add(totalShares))).div(viperPitBalance);
         if (requiredShares == 0) return 0;
 
         uint256 requiredSharesBalance = requiredShares.sub(1);
-        pit.leave(requiredSharesBalance);
+        viperPit.leave(requiredSharesBalance);
 
-        uint256 sushiAfterBalance = viper.balanceOf(address(this));
-
+        uint256 sushiAfterBalance = viperAddr.balanceOf(address(this));
         uint256 sushiBalanceDiff = sushiAfterBalance.sub(sushiBeforeBalance);
 
         balances[msg.sender] = balances[msg.sender].sub(requiredSharesBalance);
 
-        viper.safeTransfer(msg.sender, sushiBalanceDiff);
+        viperAddr.safeTransfer(msg.sender, sushiBalanceDiff);
         emit RedeemedToken(msg.sender, requiredSharesBalance, amount);
 
         return (sushiBalanceDiff);

@@ -2,7 +2,7 @@
 const hre = require("hardhat");
 const YieldSourcePrizePool = require('../abis/YieldSourcePrizePool.json');
 
-const PRIZE_POOL = "0xC0917144bf8FB243205fda9C98849b9afbd4805A";
+const PRIZE_POOL = "0x07e5e1a39d2C6fb2Cd408A2a3C3791F18828DE87";
 
 async function main() {
   const { ethers } = hre;
