@@ -3851,6 +3851,3857 @@
       "artifacts": [
         "ViperPitSource"
       ]
+    },
+    "/home/ay/panther-money-contracts/contracts/builders/ControlledTokenBuilder.sol": {
+      "lastModificationDate": 1640602107646,
+      "contentHash": "c57d3058c37f76448eab9963ddbeb5a4",
+      "sourceName": "contracts/builders/ControlledTokenBuilder.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ControlledTokenProxyFactory.sol",
+        "../token/TicketProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ControlledTokenBuilder"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/ControlledTokenProxyFactory.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "73b2bee4b9c39a4021837d8f91001a5b",
+      "sourceName": "contracts/token/ControlledTokenProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ControlledToken.sol",
+        "../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ControlledTokenProxyFactory"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/TicketProxyFactory.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "d8a964e89d6e2ed5511b808e0307aa51",
+      "sourceName": "contracts/token/TicketProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "./Ticket.sol",
+        "../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TicketProxyFactory"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/ControlledToken.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "5e50fc7c9c0eb876203b62ce83bd6ea5",
+      "sourceName": "contracts/token/ControlledToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/drafts/ERC20PermitUpgradeable.sol",
+        "./TokenControllerInterface.sol",
+        "./ControlledTokenInterface.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ControlledToken"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/external/openzeppelin/ProxyFactory.sol": {
+      "lastModificationDate": 1640602107646,
+      "contentHash": "46140164be72f3113ec3d4b5578fe7c3",
+      "sourceName": "contracts/external/openzeppelin/ProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ProxyFactory"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/drafts/ERC20PermitUpgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "3e510705706431f5c73bdc56d616424d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/drafts/ERC20PermitUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20Upgradeable.sol",
+        "./IERC20PermitUpgradeable.sol",
+        "../cryptography/ECDSAUpgradeable.sol",
+        "../utils/CountersUpgradeable.sol",
+        "./EIP712Upgradeable.sol",
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.5 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PermitUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/TokenControllerInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "a32309a2b8d9eaead4fa47ad0e857764",
+      "sourceName": "contracts/token/TokenControllerInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "TokenControllerInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/ControlledTokenInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "143230a52675fa45977e9d72d3cc468f",
+      "sourceName": "contracts/token/ControlledTokenInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+        "./TokenControllerInterface.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ControlledTokenInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
+      "lastModificationDate": 1640602183750,
+      "contentHash": "4404d773c16609e9c316b0acaa487556",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/ContextUpgradeable.sol",
+        "./IERC20Upgradeable.sol",
+        "../../math/SafeMathUpgradeable.sol",
+        "../../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Upgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/drafts/IERC20PermitUpgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "851cd6f51cf3b2cbebe86458c2d3d4c1",
+      "sourceName": "@openzeppelin/contracts-upgradeable/drafts/IERC20PermitUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20PermitUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/cryptography/ECDSAUpgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "8fe21554560075593b87ae37a30dea42",
+      "sourceName": "@openzeppelin/contracts-upgradeable/cryptography/ECDSAUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ECDSAUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "8cba95f8a22b2fb5aad5aa6cede94288",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMathUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "CountersUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/drafts/EIP712Upgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "561a5b469b2870291fdecd726e3f7501",
+      "sourceName": "@openzeppelin/contracts-upgradeable/drafts/EIP712Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EIP712Upgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/proxy/Initializable.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "71b3ac8d4da61bb6c6708c12f56e3c1f",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.24 <0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "9f901c17a18eadc08042b6a510da3b7d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
+      "lastModificationDate": 1640602183750,
+      "contentHash": "6c8edd65243ec9d6eb91cc63cce2cd16",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Upgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "33cad0216fea16ce4baadc5603b84218",
+      "sourceName": "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMathUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "aa72beb3bf14f8394b4a8a292d66589c",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/Ticket.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "795d9956e8deeb6854ba781e1ff47b25",
+      "sourceName": "contracts/token/Ticket.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "sortition-sum-tree-factory/contracts/SortitionSumTreeFactory.sol",
+        "@pooltogether/uniform-random-number/contracts/UniformRandomNumber.sol",
+        "./ControlledToken.sol",
+        "./TicketInterface.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Ticket"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/sortition-sum-tree-factory/contracts/SortitionSumTreeFactory.sol": {
+      "lastModificationDate": 1640602183010,
+      "contentHash": "6f02b25238e8d1a1dd01ba2a3f038fdb",
+      "sourceName": "sortition-sum-tree-factory/contracts/SortitionSumTreeFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SortitionSumTreeFactory"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@pooltogether/uniform-random-number/contracts/UniformRandomNumber.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "a5ea77b95a380547da51f2d5f9f02da8",
+      "sourceName": "@pooltogether/uniform-random-number/contracts/UniformRandomNumber.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "UniformRandomNumber"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/TicketInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "6a5914f9aea481f3693cff4df89e5489",
+      "sourceName": "contracts/token/TicketInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "TicketInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/builders/MultipleWinnersBuilder.sol": {
+      "lastModificationDate": 1640602107646,
+      "contentHash": "d29b0c753cc366a13f0e587a369e74e6",
+      "sourceName": "contracts/builders/MultipleWinnersBuilder.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ControlledTokenBuilder.sol",
+        "../prize-strategy/multiple-winners/MultipleWinnersProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MultipleWinnersBuilder"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/multiple-winners/MultipleWinnersProxyFactory.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "5a3b9548a9b6e2d831c48758a5e70804",
+      "sourceName": "contracts/prize-strategy/multiple-winners/MultipleWinnersProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./MultipleWinners.sol",
+        "../../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MultipleWinnersProxyFactory"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/multiple-winners/MultipleWinners.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "027aa801ccecb0a7945d53c1190b064c",
+      "sourceName": "contracts/prize-strategy/multiple-winners/MultipleWinners.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../PrizeSplit.sol",
+        "../PeriodicPrizeStrategy.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MultipleWinners"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/PrizeSplit.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "c0ad3d7a49e7221294703721024b1d99",
+      "sourceName": "contracts/prize-strategy/PrizeSplit.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "PrizeSplit"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/PeriodicPrizeStrategy.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "da61213c2213fc55e99a1a892b280b03",
+      "sourceName": "contracts/prize-strategy/PeriodicPrizeStrategy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/introspection/ERC165CheckerUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "@pooltogether/fixed-point/contracts/FixedPoint.sol",
+        "../token/TokenListener.sol",
+        "../token/TokenControllerInterface.sol",
+        "../token/ControlledToken.sol",
+        "../token/TicketInterface.sol",
+        "../prize-pool/PrizePool.sol",
+        "../Constants.sol",
+        "./PeriodicPrizeStrategyListenerInterface.sol",
+        "./PeriodicPrizeStrategyListenerLibrary.sol",
+        "./BeforeAwardListener.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategy"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "91a7735bfcbb48c7482f10f1083a8ed8",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "2910161b0b590ef5dca8ae52bfaf8873",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeCastUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/introspection/ERC165CheckerUpgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "92acf2949d383e9e294ed4a23cf0cf51",
+      "sourceName": "@openzeppelin/contracts-upgradeable/introspection/ERC165CheckerUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC165CheckerUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol": {
+      "lastModificationDate": 1640602183750,
+      "contentHash": "baee93b27b5b91092cb32dd0b22d0a4d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Upgradeable.sol",
+        "../../math/SafeMathUpgradeable.sol",
+        "../../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20Upgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@pooltogether/fixed-point/contracts/FixedPoint.sol": {
+      "lastModificationDate": 1640602182358,
+      "contentHash": "bdb0c64c2b2c834712cd4b58b6eae93e",
+      "sourceName": "@pooltogether/fixed-point/contracts/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./external/openzeppelin/OpenZeppelinSafeMath_V3_3_0.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/TokenListener.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "b2baa58ad07a86f0963dc36864e4f273",
+      "sourceName": "contracts/token/TokenListener.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TokenListenerInterface.sol",
+        "./TokenListenerLibrary.sol",
+        "../Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.4"
+      ],
+      "artifacts": [
+        "TokenListener"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-pool/PrizePool.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "baeb8c10396a4d96e1da6525b7c249d9",
+      "sourceName": "contracts/prize-pool/PrizePool.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/introspection/ERC165CheckerUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol",
+        "@pooltogether/fixed-point/contracts/FixedPoint.sol",
+        "../registry/RegistryInterface.sol",
+        "../reserve/ReserveInterface.sol",
+        "../token/TokenListenerInterface.sol",
+        "../token/TokenListenerLibrary.sol",
+        "../token/ControlledToken.sol",
+        "../token/TokenControllerInterface.sol",
+        "../utils/MappedSinglyLinkedList.sol",
+        "./PrizePoolInterface.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PrizePool"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/Constants.sol": {
+      "lastModificationDate": 1640602107646,
+      "contentHash": "a0e28203aa87e038b7745399ff06b73f",
+      "sourceName": "contracts/Constants.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/introspection/IERC1820RegistryUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Constants"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/PeriodicPrizeStrategyListenerInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "68a7698e27dc47655f0fa1efe7984bb2",
+      "sourceName": "contracts/prize-strategy/PeriodicPrizeStrategyListenerInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyListenerInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/PeriodicPrizeStrategyListenerLibrary.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "79f27a634edc25c5e06ba9fe34daa5f1",
+      "sourceName": "contracts/prize-strategy/PeriodicPrizeStrategyListenerLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyListenerLibrary"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/BeforeAwardListener.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "847fb84276b44534c5d8831691f3a248",
+      "sourceName": "contracts/prize-strategy/BeforeAwardListener.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BeforeAwardListenerInterface.sol",
+        "../Constants.sol",
+        "./BeforeAwardListenerLibrary.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BeforeAwardListener"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@pooltogether/fixed-point/contracts/external/openzeppelin/OpenZeppelinSafeMath_V3_3_0.sol": {
+      "lastModificationDate": 1640602184070,
+      "contentHash": "2d360a5a5e218684adae580d8559a368",
+      "sourceName": "@pooltogether/fixed-point/contracts/external/openzeppelin/OpenZeppelinSafeMath_V3_3_0.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "OpenZeppelinSafeMath_V3_3_0"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/TokenListenerInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "44b38d51cbc621c9790deaa99e9a92f0",
+      "sourceName": "contracts/token/TokenListenerInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "TokenListenerInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token/TokenListenerLibrary.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "fae7a6f4095cf9926edc475b439d3d80",
+      "sourceName": "contracts/token/TokenListenerLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TokenListenerLibrary"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "1e80a066fb319fc9752e62673a0e9450",
+      "sourceName": "@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC165Upgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/introspection/IERC1820RegistryUpgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "d6b51d95f558c3c31f39056c3951d769",
+      "sourceName": "@openzeppelin/contracts-upgradeable/introspection/IERC1820RegistryUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820RegistryUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "008d2d730bc1f24f3c0fafa29b7a0bd2",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuardUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol": {
+      "lastModificationDate": 1640602183750,
+      "contentHash": "9b8e95b25ad9e9907cef82d4adabe91b",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Upgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol": {
+      "lastModificationDate": 1640602183750,
+      "contentHash": "f7320992df40480ec8045cac518ad11c",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721ReceiverUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/registry/RegistryInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "9db9031a69f3866b915b0a88f3ddde50",
+      "sourceName": "contracts/registry/RegistryInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "RegistryInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/reserve/ReserveInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "f8df6df07ab0d7159ecda2fd9b5f1b07",
+      "sourceName": "contracts/reserve/ReserveInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "ReserveInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/utils/MappedSinglyLinkedList.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "480b04700c4d0a609fc8444ee8b9ec8c",
+      "sourceName": "contracts/utils/MappedSinglyLinkedList.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MappedSinglyLinkedList"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-pool/PrizePoolInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "f62bf224bf28e8a8a679b64c886b8819",
+      "sourceName": "contracts/prize-pool/PrizePoolInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/TokenListenerInterface.sol",
+        "../token/ControlledTokenInterface.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PrizePoolInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/BeforeAwardListenerInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "225ca512402a0cdd5408cebc353ec11d",
+      "sourceName": "contracts/prize-strategy/BeforeAwardListenerInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BeforeAwardListenerInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/BeforeAwardListenerLibrary.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "563951d7201d601e2d2f61526479a743",
+      "sourceName": "contracts/prize-strategy/BeforeAwardListenerLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BeforeAwardListenerLibrary"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/builders/PoolWithMultipleWinnersBuilder.sol": {
+      "lastModificationDate": 1640602107646,
+      "contentHash": "0b2ad24a37408d7cb6ea4a9336fefe78",
+      "sourceName": "contracts/builders/PoolWithMultipleWinnersBuilder.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol",
+        "@pooltogether/yield-source-interface/contracts/IYieldSource.sol",
+        "../registry/RegistryInterface.sol",
+        "../prize-pool/yield-source/YieldSourcePrizePoolProxyFactory.sol",
+        "./MultipleWinnersBuilder.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PoolWithMultipleWinnersBuilder"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@pooltogether/yield-source-interface/contracts/IYieldSource.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "c667ec192fe22ef883e63652264c2273",
+      "sourceName": "@pooltogether/yield-source-interface/contracts/IYieldSource.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IYieldSource"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-pool/yield-source/YieldSourcePrizePoolProxyFactory.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "5a1f37f68595781568f23a36826909fb",
+      "sourceName": "contracts/prize-pool/yield-source/YieldSourcePrizePoolProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./YieldSourcePrizePool.sol",
+        "../../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldSourcePrizePoolProxyFactory"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-pool/yield-source/YieldSourcePrizePool.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "cac364fed4ed3439dc2c7197a5ab9956",
+      "sourceName": "contracts/prize-pool/yield-source/YieldSourcePrizePool.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/SafeERC20Upgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "@pooltogether/yield-source-interface/contracts/IYieldSource.sol",
+        "../PrizePool.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldSourcePrizePool"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token-faucet/TokenFaucetProxyFactory.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "4ff670d34671ae7b0d52af7ee93b27f9",
+      "sourceName": "contracts/token-faucet/TokenFaucetProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TokenFaucet.sol",
+        "../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TokenFaucetProxyFactory"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/token-faucet/TokenFaucet.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "d832688b6437c57ccf675ad5a5f44dbc",
+      "sourceName": "contracts/token-faucet/TokenFaucet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/SafeCastUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "@pooltogether/fixed-point/contracts/FixedPoint.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "../utils/ExtendedSafeCast.sol",
+        "../token/TokenListener.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TokenFaucet"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/utils/ExtendedSafeCast.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "d31ccf01dff59fb9e65cabc08df899a1",
+      "sourceName": "contracts/utils/ExtendedSafeCast.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ExtendedSafeCast"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/TokenFaucetHarness.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "345af477c3bda1d75976d34af2433d7f",
+      "sourceName": "contracts/test/TokenFaucetHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token-faucet/TokenFaucet.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TokenFaucetHarness"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/ERC1820ImplementerMock.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "ed76e26db3324933c8f31ad600ce73b0",
+      "sourceName": "contracts/test/ERC1820ImplementerMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/introspection/IERC1820ImplementerUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC777/IERC777RecipientUpgradeable.sol",
+        "../Constants.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC1820ImplementerMock"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/introspection/IERC1820ImplementerUpgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "b31e95ffec4624c3e19ac2a4b9236771",
+      "sourceName": "@openzeppelin/contracts-upgradeable/introspection/IERC1820ImplementerUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820ImplementerUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC777/IERC777RecipientUpgradeable.sol": {
+      "lastModificationDate": 1640602183750,
+      "contentHash": "d362f3bbee45354fcd6393dafb03ef18",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC777/IERC777RecipientUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC777RecipientUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/prize-strategy/PeriodicPrizeStrategyListener.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "081d59630a83f27e46cfb42c1d8e1983",
+      "sourceName": "contracts/prize-strategy/PeriodicPrizeStrategyListener.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PeriodicPrizeStrategyListenerInterface.sol",
+        "./PeriodicPrizeStrategyListenerLibrary.sol",
+        "../Constants.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyListener"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/PeriodicPrizeStrategyListenerStub.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "7e08523515b33b7d8b3ba4f3bca5a68f",
+      "sourceName": "contracts/test/PeriodicPrizeStrategyListenerStub.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/PeriodicPrizeStrategyListener.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyListenerStub"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/PeriodicPrizeStrategyHarness.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "44813b1ca54a3b2f8a95caad3ed813bd",
+      "sourceName": "contracts/test/PeriodicPrizeStrategyHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/PeriodicPrizeStrategy.sol",
+        "./PeriodicPrizeStrategyDistributorInterface.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyHarness"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/PeriodicPrizeStrategyDistributorInterface.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "71241bae57a8f5d251844b402f9a0843",
+      "sourceName": "contracts/test/PeriodicPrizeStrategyDistributorInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/PeriodicPrizeStrategy.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PeriodicPrizeStrategyDistributorInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/BeforeAwardListenerStub.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "30562d1ba8faff8baafa052dc42b59c8",
+      "sourceName": "contracts/test/BeforeAwardListenerStub.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/BeforeAwardListener.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BeforeAwardListenerStub"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/introspection/ERC165Upgradeable.sol": {
+      "lastModificationDate": 1640602182378,
+      "contentHash": "2fe109cd8f5cb2cc237b5e6a7e99edd7",
+      "sourceName": "@openzeppelin/contracts-upgradeable/introspection/ERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165Upgradeable.sol",
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Upgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol": {
+      "lastModificationDate": 1640602183750,
+      "contentHash": "257300f2edf6321055d08d824bfc7440",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/ContextUpgradeable.sol",
+        "./IERC721Upgradeable.sol",
+        "./IERC721MetadataUpgradeable.sol",
+        "./IERC721EnumerableUpgradeable.sol",
+        "./IERC721ReceiverUpgradeable.sol",
+        "../../introspection/ERC165Upgradeable.sol",
+        "../../math/SafeMathUpgradeable.sol",
+        "../../utils/AddressUpgradeable.sol",
+        "../../utils/EnumerableSetUpgradeable.sol",
+        "../../utils/EnumerableMapUpgradeable.sol",
+        "../../utils/StringsUpgradeable.sol",
+        "../../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Upgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721MetadataUpgradeable.sol": {
+      "lastModificationDate": 1640602183750,
+      "contentHash": "2d7026b65054974c694449d3f243bb39",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721MetadataUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721MetadataUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721EnumerableUpgradeable.sol": {
+      "lastModificationDate": 1640602183750,
+      "contentHash": "91be9105f64b0e3ef04ca0672e5249d5",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721EnumerableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721EnumerableUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "b927cbeb303f88e9f6b38fdc71a5d381",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSetUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/EnumerableMapUpgradeable.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "4ff02b74113158b1360f1eb85a7be7f3",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/EnumerableMapUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMapUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
+      "lastModificationDate": 1640602182382,
+      "contentHash": "f00ef76e89770e6a3e3f0e4da0844794",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "StringsUpgradeable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/NFT.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "cef7c1dceefb8aaeec836bd3cd175e70",
+      "sourceName": "contracts/test/NFT.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "NFT"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/YieldSourcePrizePoolHarness.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "9fed7121deedeff0e3596c9d37412a5c",
+      "sourceName": "contracts/test/YieldSourcePrizePoolHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-pool/yield-source/YieldSourcePrizePool.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldSourcePrizePoolHarness"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/YieldSourcePrizePoolHarnessProxyFactory.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "7eb1d398b23422222f489142feb49a61",
+      "sourceName": "contracts/test/YieldSourcePrizePoolHarnessProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./YieldSourcePrizePoolHarness.sol",
+        "../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldSourcePrizePoolHarnessProxyFactory"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/PrizePoolHarness.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "ab469e75877d271944860418bbddecb2",
+      "sourceName": "contracts/test/PrizePoolHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-pool/PrizePool.sol",
+        "./YieldSourceStub.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PrizePoolHarness"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/YieldSourceStub.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "76978eab0be4e5d84b5735cf8c590270",
+      "sourceName": "contracts/test/YieldSourceStub.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldSourceStub"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/PrizeSplitHarness.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "e67ae6e1b2653b5f2e163d46aac617e2",
+      "sourceName": "contracts/test/PrizeSplitHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+        "../token/ControlledToken.sol",
+        "../prize-strategy/PrizeSplit.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "PrizeSplitHarness"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/reserve/Reserve.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "b36199404b454c8fe91c9e6e847cebfb",
+      "sourceName": "contracts/reserve/Reserve.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "./ReserveInterface.sol",
+        "../prize-pool/PrizePoolInterface.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Reserve"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/ERC20Mintable.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "bb030081db51e30f42997aa57d5f83fd",
+      "sourceName": "contracts/test/ERC20Mintable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC20Mintable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/EchidnaTokenFaucet.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "0c603afc30ac5d58d6f4746ef4f3fb49",
+      "sourceName": "contracts/test/EchidnaTokenFaucet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token-faucet/TokenFaucet.sol",
+        "./ERC20Mintable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EchidnaTokenFaucet"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/CTokenMock.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "60dc2663558b2e656ae57364720ec34c",
+      "sourceName": "contracts/test/CTokenMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+        "@pooltogether/fixed-point/contracts/FixedPoint.sol",
+        "hardhat/console.sol",
+        "./ERC20Mintable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "CTokenMock"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1640602181674,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/registry/Registry.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "15dcc7d65e6aaaeb17380e97a961bda0",
+      "sourceName": "contracts/registry/Registry.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "./RegistryInterface.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Registry"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/MultipleWinnersHarness.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "8b83a58915398986288fb7f4628102a7",
+      "sourceName": "contracts/test/MultipleWinnersHarness.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../prize-strategy/multiple-winners/MultipleWinners.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MultipleWinnersHarness"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/MultipleWinnersHarnessProxyFactory.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "5c78a4c9f1fea81602fd1a33d8c570f3",
+      "sourceName": "contracts/test/MultipleWinnersHarnessProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./MultipleWinnersHarness.sol",
+        "../external/openzeppelin/ProxyFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MultipleWinnersHarnessProxyFactory"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/MappedSinglyLinkedListExposed.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "0512d61cd38789e7e2156507bd53ad16",
+      "sourceName": "contracts/test/MappedSinglyLinkedListExposed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/MappedSinglyLinkedList.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MappedSinglyLinkedListExposed"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/viper-stake/ViperYieldSource.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "fa33b52d9ea697f82a7748113d52359f",
+      "sourceName": "contracts/viper-stake/ViperYieldSource.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@pooltogether/yield-source-interface/contracts/IYieldSource.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "./IPit.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ViperPitSource"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1640602183722,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts/token/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1640602183722,
+      "contentHash": "33e22842646d746e5c4124c2fdc051aa",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1640602182354,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1640602182358,
+      "contentHash": "1c60f58cee45c61469e1aea31e4dd879",
+      "sourceName": "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/viper-stake/IPit.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "8dbf4fdd096dd504f7902a23a716d59e",
+      "sourceName": "contracts/viper-stake/IPit.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IPit"
+      ]
+    },
+    "/home/ay/panther-money-contracts/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1640602182358,
+      "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/ERC721Mintable.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "14ff688e8192200ab7b97e463d014341",
+      "sourceName": "contracts/test/ERC721Mintable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC721Mintable"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/ExtendedSafeCastExposed.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "ae7dbe34cb9cc9d73c59c20163070c35",
+      "sourceName": "contracts/test/ExtendedSafeCastExposed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ExtendedSafeCast.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ExtendedSafeCastExposed"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/external/openzeppelin/OpenZeppelinProxyFactoryInterface.sol": {
+      "lastModificationDate": 1640602107646,
+      "contentHash": "7e9b2dec49a7cd0822a3ec3924d5fbcf",
+      "sourceName": "contracts/external/openzeppelin/OpenZeppelinProxyFactoryInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "OpenZeppelinProxyFactoryInterface"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/Timestamp.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "1194f5301c15aad9fe9de236b3b8fe10",
+      "sourceName": "contracts/test/Timestamp.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Timestamp"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/test/UInt256ArrayExposed.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "28d5d2883815d47bff3479f7c4f2f1be",
+      "sourceName": "contracts/test/UInt256ArrayExposed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/UInt256Array.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UInt256ArrayExposed"
+      ]
+    },
+    "/home/ay/panther-money-contracts/contracts/utils/UInt256Array.sol": {
+      "lastModificationDate": 1640602107650,
+      "contentHash": "606006e5fa9fbd9231af18fe04fbaaee",
+      "sourceName": "contracts/utils/UInt256Array.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UInt256Array"
+      ]
     }
   }
 }
